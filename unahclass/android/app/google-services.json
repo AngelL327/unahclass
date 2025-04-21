@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "172422835919",
+    "project_id": "unahclass-b09a7",
+    "storage_bucket": "unahclass-b09a7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172422835919:android:36ca3ee4f166878583d1ba",
+        "android_client_info": {
+          "package_name": "com.example.unahclass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARHuOXRP-pNTZnj0_xcCIGoI9Sl2vJERU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
