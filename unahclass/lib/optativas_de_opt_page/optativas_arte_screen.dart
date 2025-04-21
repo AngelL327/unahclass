@@ -56,3 +56,30 @@ class OptativasArteScreen extends StatelessWidget {
           ),
         ],
       ),
+      body:ListView.builder(
+          padding: EdgeInsets.all(16),
+          itemCount: clasesArte.length,
+          itemBuilder: (context, index) {
+            return Card(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              color: Color(0XFFF3F5F9),
+              child: ListTile(
+                title: Text(
+                  clasesArte[index]["nombre"],
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),
+                ),
+                trailing: Container(
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.circle,
+                  ),
+                  child: clasesArte[index]["icono"],
+                ),
+              ),
+            );
+          },
+        ),
+    );
+  }
+}
