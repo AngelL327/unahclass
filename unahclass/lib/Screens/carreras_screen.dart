@@ -44,3 +44,55 @@ class CarrerasScreen extends StatelessWidget {
       ),
     );
   }
+    Widget _buildCarreraCard(BuildContext context, String carrera, int index) {
+    final colors = [
+      [const Color(0xFF05D1AC), const Color(0xFF05D1AC)], // Verde agua
+      [const Color(0xFFE94409), const Color(0xFFE94409)], // Rojo/naranja fuerte
+      [const Color(0xFFE20F83), const Color(0xFFE20F83)], // Fucsia fuerte
+      [const Color(0xFF0D5BDA), const Color(0xFF0D5BDA)], // Azul profundo
+      [const Color(0xFF13E05E), const Color(0xFF13E05E)], // Verde brillante
+    ];
+    final gradientColors = colors[index % colors.length];
+
+    return GestureDetector(
+      onTap: () => _navigateToCarreraDetail(context, carrera),
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: gradientColors,
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.black12,
+              blurRadius: 8,
+              offset: Offset(0, 4),
+            ),
+          ],
+        ),
+        padding: const EdgeInsets.all(12),
+        alignment: Alignment.center,
+        child: Text(
+          carrera,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _navigateToCarreraDetail(BuildContext context, String carreraNombre) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => CarreraDetailScreen(carreraNombre: carreraNombre),
+      ),
+    );
+  }
+}
