@@ -57,3 +57,131 @@ class _EstadisticasScreenState extends State<EstadisticasScreen> {
     });
   }
 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF1D9FCB),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.refresh),
+            onPressed: _limpiarSeleccionadas,
+          )
+        ],
+      ),
+      body: Column(
+        children: [
+          const SizedBox(height: 10),
+          Expanded(
+            child: ListView.builder(
+              itemCount: ultimasMaterias.length,
+              itemBuilder: (context, index) {
+                final materia = ultimasMaterias[index];
+                final nota = double.tryParse(ultimasNotas[index]) ?? 0.0;
+
+                return CheckboxListTile(
+                  value: seleccionadas.contains(index),
+                  onChanged: (selected) {
+                    setState(() {
+                      if (selected == true) {
+                        seleccionadas.add(index);
+                      } else {
+                        seleccionadas.remove(index);
+                      }
+                    });
+                    _guardarSeleccionadas();
+                  },
+                  title: Text(materia['asignatura'] ?? ''),
+                  subtitle: Text('Nota: ${nota.toStringAsFixed(1)} | UV: ${materia['uv']}'),
+                );
+              },
+            ),
+          ),
+          if (seleccionadas.isNotEmpty)
+            SizedBox(
+              height: 300,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: BarChart(
+                  BarChartData(
+                    alignment: BarChartAlignment.spaceAround,
+                    barTouchData: BarTouchData(enabled: true),
+                    titlesData: FlTitlesData(
+                      bottomTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: true,
+                          getTitlesWidget: (value, meta) {
+                            int idx = value.toInt();
+                            if (idx >= seleccionadas.length) return const SizedBox();
+                            return Text(
+                              ultimasMaterias[seleccionadas.elementAt(idx)]['asignatura']
+                                  .toString()
+                                  .split(" ")
+                                  .first,
+                              style: const TextStyle(fontSize: 10),
+                            );
+                          },
+                        ),
+                      ),
+                      leftTitles: AxisTitles(
+                        sideTitles: SideTitles(showTitles: true),
+                      ),
+                      topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                      rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                    ),
+                    barGroups: List.generate(seleccionadas.length, (i) {
+                      final idx = seleccionadas.elementAt(i);
+                      final nota = double.tryParse(ultimasNotas[idx]) ?? 0.0;
+
+                      return BarChartGroupData(
+                        x: i,
+                        barRods: [
+                          BarChartRodData(
+                            toY: nota,
+                            color: Colors.blueAccent,
+                            width: 18,
+                            borderRadius: BorderRadius.circular(4),
+                          )
+                        ],
+                      );
+                    }),
+                  ),
+                ),
+              ),
+            ),
+          ElevatedButton(
+            onPressed: () {
+              double totalUv = 0;
+              double totalNotas = 0;
+
+              for (int index in seleccionadas) {
+                final nota = double.tryParse(ultimasNotas[index]) ?? 0.0;
+                final uv = ultimasMaterias[index]['uv'];
+                totalNotas += nota * uv;
+                totalUv += uv;
+              }
+
+              final indiceParcial = totalUv > 0 ? totalNotas / totalUv : 0.0;
+
+              showDialog(
+                context: context,
+                builder: (_) => AlertDialog(
+                  title: const Text('Índice de seleccionadas'),
+                  content: Text('Tu índice parcial es: ${indiceParcial.toStringAsFixed(2)}'),
+                  actions: [
+                    TextButton(
+                      child: const Text('Cerrar'),
+                      onPressed: () => Navigator.pop(context),
+                    )
+                  ],
+                ),
+              );
+            },
+            style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF1D9FCB)),
+            child: const Text("Calcular índice de seleccionadas", style: TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
+    );
+  }
+}
