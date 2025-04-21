@@ -156,4 +156,73 @@ class _SeleccionCarreraScreenState extends State<SeleccionCarreraScreen> {
       MaterialPageRoute(builder: (context) => DetalleCarreraScreen()),
     );
   }
-  
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: SearchAppBar(
+          onTextChanged: _filtrarCarreras,
+          getSuggestion: (input) {
+            final inputNorm = removeDiacritics(input.toLowerCase());
+            return carrerasFiltradas.firstWhere(
+              (c) => removeDiacritics(c.toLowerCase()).contains(inputNorm),
+              orElse: () => 'Buscar carrera...',
+            );
+          },
+        ),
+      
+        body: ListView.builder(
+          itemCount: carrerasFiltradas.length,
+          itemBuilder: (context, index) {
+            final nombreCarrera = carrerasFiltradas[index];
+            return Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 8.0,
+              ),
+              child: Card(
+                elevation: 4,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                color: Colors.white,
+                child: ListTile(
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 10,
+                  ),
+                  leading: FaIcon(
+                    carreraIconMap[nombreCarrera] ??
+                        FontAwesomeIcons
+                            .graduationCap, // Usamos el ícono generado
+                    color: Color(0xFF1d9fcb),
+                    size: 20,
+                  ),
+                  title: Text(
+                    nombreCarrera,
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey.shade900,
+                    ),
+                  ),
+                  trailing: Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    color: Colors.black54,
+                    size: 16,
+                  ),
+                  tileColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  onTap: () => _guardarCarreraSeleccionada(carrerasFiltradas[index]),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
