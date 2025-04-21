@@ -20,6 +20,7 @@ class CarrerasScreen extends StatelessWidget {
       body: _buildBody(carreras),
     );
   }
+
   Widget _buildBody(List<String> carreras) {
     if (carreras.isEmpty) {
       return const Center(
@@ -40,11 +41,14 @@ class CarrerasScreen extends StatelessWidget {
           crossAxisSpacing: 16,
           childAspectRatio: 1,
         ),
-        itemBuilder: (context, index) => _buildCarreraCard(context, carreras[index], index),
+        itemBuilder:
+            (context, index) =>
+                _buildCarreraCard(context, carreras[index], index),
       ),
     );
   }
-    Widget _buildCarreraCard(BuildContext context, String carrera, int index) {
+
+  Widget _buildCarreraCard(BuildContext context, String carrera, int index) {
     final colors = [
       [const Color(0xFF05D1AC), const Color(0xFF05D1AC)], // Verde agua
       [const Color(0xFFE94409), const Color(0xFFE94409)], // Rojo/naranja fuerte
@@ -95,4 +99,258 @@ class CarrerasScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+class CarreraDetailScreen extends StatelessWidget {
+  final String carreraNombre;
+
+  const CarreraDetailScreen({super.key, required this.carreraNombre});
+
+  bool _tieneElementosEspeciales() {
+    final optativas = CarrerasData.getOptativasPorCarrera(carreraNombre);
+    final laboratorios = CarrerasData.getLaboratoriosPorCarrera(carreraNombre);
+    final orientaciones = CarrerasData.getOrientacionesPorCarrera(
+      carreraNombre,
+    );
+    final electivos = CarrerasData.getEspaciosAprendizajeElectivos(
+      carreraNombre,
+    );
+
+    return optativas.isNotEmpty ||
+        laboratorios.isNotEmpty ||
+        orientaciones.isNotEmpty ||
+        electivos != null;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final periodos = CarrerasData.getPeriodosUnicos(carreraNombre);
+    final mostrarBotonEspeciales = _tieneElementosEspeciales();
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(carreraNombre),
+        backgroundColor: const Color(0xFF1D9FCB),
+        foregroundColor: Colors.white,
+        actions: [
+          if (mostrarBotonEspeciales)
+            IconButton(
+              icon: const Icon(
+                Icons.arrow_forward_ios,
+                color: Color.fromARGB(255, 219, 217, 212),
+              ),
+              tooltip: 'Elementos especiales',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder:
+                        (context) => ElementosEspecialesScreen(
+                          carreraNombre: carreraNombre,
+                        ),
+                  ),
+                );
+              },
+            ),
+        ],
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(12),
+            child: Text(
+              'Periodos Académicos',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+              ),
+            ),
+          ),
+          _buildPeriodosList(periodos, carreraNombre),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPeriodosList(List<String> periodos, String carreraNombre) {
+    if (periodos.isEmpty) {
+      return const Expanded(
+        child: Center(
+          child: Text(
+            'No hay periodos disponibles',
+            style: TextStyle(fontSize: 16, color: Colors.blueGrey),
+          ),
+        ),
+      );
+    }
+
+    return Expanded(
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children:
+            periodos.map((periodo) {
+              final materias = CarrerasData.getMateriasPorPeriodo(
+                carreraNombre,
+                periodo,
+              );
+              return PeriodoContainer(periodo: periodo, materias: materias);
+            }).toList(),
+      ),
+    );
+  }
+}
+
+class ElementosEspecialesScreen extends StatelessWidget {
+  final String carreraNombre;
+
+  const ElementosEspecialesScreen({super.key, required this.carreraNombre});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Elementos Especiales - $carreraNombre'),
+        backgroundColor: const Color(0xFF1D9FCB),
+        foregroundColor: Colors.white,
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildSeccionOptativas(),
+            _buildSeccionLaboratorios(),
+            _buildSeccionOrientaciones(),
+            _buildSeccionElectivos(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSeccionOptativas() {
+    final optativas = CarrerasData.getOptativasPorCarrera(carreraNombre);
+    if (optativas.isEmpty) return const SizedBox();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'Materias Optativas',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 8),
+        ...optativas.map((materia) => _buildTarjetaMateria(materia)),
+        const SizedBox(height: 20),
+      ],
+    );
+  }
+
+  Widget _buildSeccionLaboratorios() {
+    final laboratorios = CarrerasData.getLaboratoriosPorCarrera(carreraNombre);
+    if (laboratorios.isEmpty) return const SizedBox();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'Laboratorios',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 8),
+        ...laboratorios.map(
+          (lab) => Card(
+            child: ListTile(
+              leading: const Icon(Icons.science),
+              title: Text(lab['asignatura'] ?? 'Laboratorio'),
+              subtitle: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Código: ${lab['codigo'] ?? ''}"),
+                  Text("Espacio: ${lab['Espacio de Aprendizaje'] ?? ''}"),
+                ],
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: 20),
+      ],
+    );
+  }
+
+  Widget _buildSeccionOrientaciones() {
+    final orientaciones = CarrerasData.getOrientacionesPorCarrera(
+      carreraNombre,
+    );
+    if (orientaciones.isEmpty) return const SizedBox();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'Orientaciones',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 8),
+        ...orientaciones.map(
+          (orientacion) => ExpansionTile(
+            title: Text(orientacion['nombre'] ?? 'Orientación'),
+            children:
+                CarrerasData.getMateriasPorOrientacion(
+                  carreraNombre,
+                  orientacion['nombre'],
+                ).map((materia) => _buildTarjetaMateria(materia)).toList(),
+          ),
+        ),
+        const SizedBox(height: 20),
+      ],
+    );
+  }
+
+  Widget _buildSeccionElectivos() {
+    final electivos = CarrerasData.getEspaciosAprendizajeElectivos(
+      carreraNombre,
+    );
+    if (electivos == null) return const SizedBox();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'Espacios Electivos',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 8),
+        ...electivos.entries.map(
+          (entry) => ExpansionTile(
+            title: Text(entry.key),
+            children:
+                entry.value
+                    .map((materia) => _buildTarjetaMateria(materia))
+                    .toList(),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildTarjetaMateria(Map<String, dynamic> materia) {
+    return Card(
+      margin: const EdgeInsets.symmetric(vertical: 4),
+      child: ListTile(
+        title: Text(materia['asignatura'] ?? 'Sin nombre'),
+        subtitle: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Código: ${materia['codigo'] ?? 'N/A'}"),
+            if (materia['uv'] != null) Text("UV: ${materia['uv']}"),
+          ],
+        ),
+        trailing: Text("Req: ${materia['requisito'] ?? 'Ninguno'}"),
+      ),
+    );
+  }
+    
 }
