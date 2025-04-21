@@ -20,3 +20,27 @@ class CarrerasScreen extends StatelessWidget {
       body: _buildBody(carreras),
     );
   }
+  Widget _buildBody(List<String> carreras) {
+    if (carreras.isEmpty) {
+      return const Center(
+        child: Text(
+          'No hay carreras disponibles para esta facultad',
+          style: TextStyle(fontSize: 16, color: Colors.blueGrey),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: GridView.builder(
+        itemCount: carreras.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 16,
+          childAspectRatio: 1,
+        ),
+        itemBuilder: (context, index) => _buildCarreraCard(context, carreras[index], index),
+      ),
+    );
+  }
