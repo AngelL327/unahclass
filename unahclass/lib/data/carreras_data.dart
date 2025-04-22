@@ -12707,7 +12707,7 @@ class CarrerasData {
       final carrera = getCarreraPorNombre(carreraNombre);
       if (carrera == null) return [];
 
-      // Buscar en diferentes posibles ubicaciones de optativas
+  
       if (carrera['optativas'] != null) {
         return List<Map<String, dynamic>>.from(carrera['optativas']);
       }
@@ -12735,7 +12735,7 @@ class CarrerasData {
     }
   }
 
-  // Método para obtener los laboratorios de una carrera
+
   static List<Map<String, dynamic>> getLaboratoriosPorCarrera(
     String carreraNombre,
   ) {
@@ -12752,7 +12752,7 @@ class CarrerasData {
     }
   }
 
-  // Método para obtener los espacios de aprendizaje electivos (Ing. Civil)
+  
   static Map<String, List<Map<String, dynamic>>>?
   getEspaciosAprendizajeElectivos(String carreraNombre) {
     try {
@@ -12770,7 +12770,6 @@ class CarrerasData {
     }
   }
 
-  // Método para obtener todas las materias de una orientación específica
   static List<Map<String, dynamic>> getMateriasPorOrientacion(
     String carreraNombre,
     String orientacionNombre,
@@ -12794,7 +12793,7 @@ class CarrerasData {
     }
   }
 
-  // Método para obtener todas las materias electivas agrupadas por categoría (útil para GridBuilder)
+  
   static Map<String, List<Map<String, dynamic>>> getMateriasElectivasAgrupadas(
     String carreraNombre,
   ) {
@@ -12817,7 +12816,7 @@ class CarrerasData {
       }
     }
 
-    // Agregar espacios de aprendizaje electivos (Ing. Civil)
+
     final espacios = getEspaciosAprendizajeElectivos(carreraNombre);
     if (espacios != null) {
       result.addAll(espacios);
@@ -12826,16 +12825,16 @@ class CarrerasData {
     return result;
   }
 
-  // Método para obtener todas las materias electivas en una lista plana (útil para ListBuilder)
+ 
   static List<Map<String, dynamic>> getTodasMateriasElectivas(
     String carreraNombre,
   ) {
     final result = <Map<String, dynamic>>[];
 
-    // Agregar optativas generales
+  
     result.addAll(getOptativasPorCarrera(carreraNombre));
 
-    // Agregar materias de orientaciones
+   
     final orientaciones = getOrientacionesPorCarrera(carreraNombre);
     for (final orientacion in orientaciones) {
       final nombre =
@@ -12843,7 +12842,7 @@ class CarrerasData {
       result.addAll(getMateriasPorOrientacion(carreraNombre, nombre));
     }
 
-    // Agregar espacios de aprendizaje electivos (Ing. Civil)
+
     final espacios = getEspaciosAprendizajeElectivos(carreraNombre);
     if (espacios != null) {
       for (final listaMaterias in espacios.values) {
