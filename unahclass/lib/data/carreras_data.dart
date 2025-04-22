@@ -1,6 +1,6 @@
 class CarrerasData {
   static final List<Map<String, dynamic>> carreras = [
-    {
+  {
       "carrera": "Derecho",
       "materias": [
         {
@@ -9,7 +9,7 @@ class CarrerasData {
           "codigo": "SC-101",
           "asignatura": "Sociología",
           "uv": 4,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 2,
@@ -17,7 +17,7 @@ class CarrerasData {
           "codigo": "EG-011",
           "asignatura": "Español General",
           "uv": 4,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 3,
@@ -25,7 +25,7 @@ class CarrerasData {
           "codigo": "FF-101",
           "asignatura": "Filosofía",
           "uv": 4,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 4,
@@ -33,7 +33,7 @@ class CarrerasData {
           "codigo": "HH-101",
           "asignatura": "Historia de Honduras",
           "uv": 4,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 5,
@@ -41,7 +41,7 @@ class CarrerasData {
           "codigo": "MM-100",
           "asignatura": "Introducción a la Estadística Social",
           "uv": 4,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 8,
@@ -49,7 +49,7 @@ class CarrerasData {
           "codigo": "CDE-012",
           "asignatura": "Met. Tec. Invest. e Informática",
           "uv": 4,
-          "requisito": "MM-100",
+          "requisito": "MM-100"
         },
         {
           "id": 9,
@@ -57,7 +57,7 @@ class CarrerasData {
           "codigo": "CDE-022",
           "asignatura": "Ética General",
           "uv": 3,
-          "requisito": "FF-101",
+          "requisito": "FF-101"
         },
         {
           "id": 10,
@@ -65,7 +65,7 @@ class CarrerasData {
           "codigo": "CDE-032",
           "asignatura": "Lógica Jurídica",
           "uv": 3,
-          "requisito": "FF-101",
+          "requisito": "FF-101"
         },
         {
           "id": 11,
@@ -73,7 +73,7 @@ class CarrerasData {
           "codigo": "CDE-042",
           "asignatura": "Interpretación Jurídica",
           "uv": 3,
-          "requisito": "SC-101",
+          "requisito": "SC-101"
         },
         {
           "id": 12,
@@ -81,7 +81,7 @@ class CarrerasData {
           "codigo": "OP-1 Derecho",
           "asignatura": "Humanidades",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 13,
@@ -89,7 +89,7 @@ class CarrerasData {
           "codigo": "OP-2 Derechos",
           "asignatura": "Ciencias Naturales",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 14,
@@ -97,7 +97,7 @@ class CarrerasData {
           "codigo": "CDE-053",
           "asignatura": "Derecho Romano",
           "uv": 4,
-          "requisito": "CDE-012,CDE-022,CDE-032,CDE-042",
+          "requisito": "CDE-012,CDE-022,CDE-032,CDE-042"
         },
         {
           "id": 14,
@@ -105,7 +105,7 @@ class CarrerasData {
           "codigo": "OP-3 Derecho",
           "asignatura": "Arte o Deporte",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 14,
@@ -113,15 +113,15 @@ class CarrerasData {
           "codigo": "OP-4 Derecho",
           "asignatura": "Lenguas Extranjeras",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "Ninguno"
         },
         {
           "id": 15,
           "periodo": 3,
           "codigo": "CDE-063",
-          "asignatura": "Introducción al estudio de Derecho",
+          "asignatura": "Introducción al Estudio de Derecho",
           "uv": 5,
-          "requisito": "CDE-012,CDE-022,CDE-032,CDE-042",
+          "requisito": "CDE-012,CDE-022,CDE-032,CDE-042"
         },
         {
           "id": 16,
@@ -129,7 +129,7 @@ class CarrerasData {
           "codigo": "CDE-073",
           "asignatura": "Teoría General del Estado",
           "uv": 4,
-          "requisito": "CDE-012,CDE-022,CDE-032,CDE-042",
+          "requisito": "CDE-012,CDE-022,CDE-032,CDE-042"
         },
         {
           "id": 17,
@@ -137,7 +137,7 @@ class CarrerasData {
           "codigo": "CDE-084",
           "asignatura": "Derecho de Familia",
           "uv": 3,
-          "requisito": "CDE-053",
+          "requisito": "CDE-053"
         },
         {
           "id": 18,
@@ -145,7 +145,7 @@ class CarrerasData {
           "codigo": "CDE-094",
           "asignatura": "Teoría General del Proceso",
           "uv": 4,
-          "requisito": "CDE-063",
+          "requisito": "CDE-063"
         },
         {
           "id": 19,
@@ -153,7 +153,7 @@ class CarrerasData {
           "codigo": "CDE-104",
           "asignatura": "Derecho Penal I",
           "uv": 4,
-          "requisito": "CDE-063",
+          "requisito": "CDE-063"
         },
         {
           "id": 20,
@@ -161,23 +161,23 @@ class CarrerasData {
           "codigo": "CDE-114",
           "asignatura": "Teoría de la Constitución",
           "uv": 4,
-          "requisito": "CDE-073",
+          "requisito": "CDE-073"
         },
         {
           "id": 21,
           "periodo": 4,
           "codigo": "CDE-124",
-          "asignatura": "Derecho Forestal y de aguas",
+          "asignatura": "Derecho Forestal y de Aguas",
           "uv": 4,
-          "requisito": "CDE-063,CDE-073",
+          "requisito": "CDE-063,CDE-073"
         },
         {
           "id": 22,
           "periodo": 5,
           "codigo": "CDE-135",
-          "asignatura": "Derecho Privado I (bienes)",
+          "asignatura": "Derecho Privado I (Bienes)",
           "uv": 4,
-          "requisito": "CDE-084",
+          "requisito": "CDE-084"
         },
         {
           "id": 23,
@@ -185,7 +185,7 @@ class CarrerasData {
           "codigo": "CDE-145",
           "asignatura": "Derecho Procesal civil I",
           "uv": 4,
-          "requisito": "CDE-094",
+          "requisito": "CDE-094"
         },
         {
           "id": 24,
@@ -193,7 +193,7 @@ class CarrerasData {
           "codigo": "CDE-155",
           "asignatura": "Derecho Penal II",
           "uv": 4,
-          "requisito": "CDE-104",
+          "requisito": "CDE-104"
         },
         {
           "id": 25,
@@ -201,7 +201,7 @@ class CarrerasData {
           "codigo": "CDE-165",
           "asignatura": "Derecho Niñez, Adolescente, Mujer",
           "uv": 4,
-          "requisito": "CDE-084",
+          "requisito": "CDE-084"
         },
         {
           "id": 26,
@@ -209,7 +209,7 @@ class CarrerasData {
           "codigo": "CDE-175",
           "asignatura": "Historia Const. e Institu. Política",
           "uv": 4,
-          "requisito": "CDE-114",
+          "requisito": "CDE-114"
         },
         {
           "id": 27,
@@ -217,7 +217,7 @@ class CarrerasData {
           "codigo": "CDE-186",
           "asignatura": "Derecho Laboral I",
           "uv": 4,
-          "requisito": "CDE-175",
+          "requisito": "CDE-175"
         },
         {
           "id": 28,
@@ -225,7 +225,7 @@ class CarrerasData {
           "codigo": "CDE-206",
           "asignatura": "Derecho Privado II (Sucesiones)",
           "uv": 4,
-          "requisito": "CDE-135",
+          "requisito": "CDE-135"
         },
         {
           "id": 29,
@@ -233,7 +233,7 @@ class CarrerasData {
           "codigo": "CDE-216",
           "asignatura": "Derecho Procesal Civil II",
           "uv": 4,
-          "requisito": "CDE-145",
+          "requisito": "CDE-145"
         },
         {
           "id": 30,
@@ -241,7 +241,7 @@ class CarrerasData {
           "codigo": "CDE-226",
           "asignatura": "Criminología",
           "uv": 4,
-          "requisito": "CDE-155",
+          "requisito": "CDE-155"
         },
         {
           "id": 31,
@@ -249,7 +249,7 @@ class CarrerasData {
           "codigo": "CDE-236",
           "asignatura": "Derecho Constitucional",
           "uv": 3,
-          "requisito": "CDE-175",
+          "requisito": "CDE-175"
         },
         {
           "id": 32,
@@ -257,7 +257,7 @@ class CarrerasData {
           "codigo": "CDE-196",
           "asignatura": "Derecho Intern. Público I",
           "uv": 4,
-          "requisito": "CDE-114",
+          "requisito": "CDE-114"
         },
         {
           "id": 33,
@@ -265,15 +265,15 @@ class CarrerasData {
           "codigo": "CDE-247",
           "asignatura": "Derecho Ejecución Penal",
           "uv": 3,
-          "requisito": "CDE-226",
+          "requisito": "CDE-226"
         },
         {
           "id": 34,
           "periodo": 7,
           "codigo": "CDE-257",
-          "asignatura": "Derecho Privado III (Teoría de las obligaciones)",
+          "asignatura": "Derecho Privado III (Teoría de las Obligaciones)",
           "uv": 5,
-          "requisito": "CDE-206",
+          "requisito": "CDE-206"
         },
         {
           "id": 35,
@@ -281,7 +281,7 @@ class CarrerasData {
           "codigo": "CDE-267",
           "asignatura": "Derecho Laboral II",
           "uv": 4,
-          "requisito": "CDE-186",
+          "requisito": "CDE-186"
         },
         {
           "id": 36,
@@ -289,7 +289,7 @@ class CarrerasData {
           "codigo": "CDE-277",
           "asignatura": "Derecho Internacional Público II",
           "uv": 4,
-          "requisito": "CDE-196",
+          "requisito": "CDE-196"
         },
         {
           "id": 37,
@@ -297,7 +297,7 @@ class CarrerasData {
           "codigo": "CDE-287",
           "asignatura": "Derecho Administrativo I",
           "uv": 4,
-          "requisito": "CDE-236",
+          "requisito": "CDE-236"
         },
         {
           "id": 38,
@@ -305,7 +305,7 @@ class CarrerasData {
           "codigo": "CDE-298",
           "asignatura": "Derecho Priv. IV (Teoría de los Contr.)",
           "uv": 5,
-          "requisito": "CDE-257",
+          "requisito": "CDE-257"
         },
         {
           "id": 39,
@@ -313,7 +313,7 @@ class CarrerasData {
           "codigo": "CDE-308",
           "asignatura": "Medicina Forense",
           "uv": 3,
-          "requisito": "CDE-247",
+          "requisito": "CDE-247"
         },
         {
           "id": 40,
@@ -321,7 +321,7 @@ class CarrerasData {
           "codigo": "CDE-318",
           "asignatura": "Derecho Mercantil I",
           "uv": 4,
-          "requisito": "CDE-257",
+          "requisito": "CDE-257"
         },
         {
           "id": 41,
@@ -329,15 +329,15 @@ class CarrerasData {
           "codigo": "CDE-328",
           "asignatura": "Derecho Ambiental",
           "uv": 4,
-          "requisito": "CDE-287",
+          "requisito": "CDE-287"
         },
         {
           "id": 42,
           "periodo": 8,
           "codigo": "CDE-338",
-          "asignatura": "Derecho seguridad social",
+          "asignatura": "Derecho Seguridad Social",
           "uv": 4,
-          "requisito": "CDE-267",
+          "requisito": "CDE-267"
         },
         {
           "id": 43,
@@ -345,7 +345,7 @@ class CarrerasData {
           "codigo": "CDE-348",
           "asignatura": "Derecho Administrativo II",
           "uv": 4,
-          "requisito": "CDE-287",
+          "requisito": "CDE-287"
         },
         {
           "id": 44,
@@ -353,7 +353,7 @@ class CarrerasData {
           "codigo": "CDE-359",
           "asignatura": "Derecho Mercantil II",
           "uv": 4,
-          "requisito": "CDE-318",
+          "requisito": "CDE-318"
         },
         {
           "id": 45,
@@ -361,7 +361,7 @@ class CarrerasData {
           "codigo": "CDE-369",
           "asignatura": "Derecho Agrario",
           "uv": 3,
-          "requisito": "CDE-287",
+          "requisito": "CDE-287"
         },
         {
           "id": 46,
@@ -369,7 +369,7 @@ class CarrerasData {
           "codigo": "CDE-379",
           "asignatura": "Derecho Admin. Especial",
           "uv": 4,
-          "requisito": "CDE-348",
+          "requisito": "CDE-348"
         },
         {
           "id": 47,
@@ -377,7 +377,7 @@ class CarrerasData {
           "codigo": "CDE-389",
           "asignatura": "Derecho de Integración",
           "uv": 3,
-          "requisito": "CDE-277",
+          "requisito": "CDE-277"
         },
         {
           "id": 48,
@@ -393,7 +393,7 @@ class CarrerasData {
           "codigo": "CDE-409",
           "asignatura": "Derecho Humano y Humanitario",
           "uv": 4,
-          "requisito": "CDE-277",
+          "requisito": "CDE-277"
         },
         {
           "id": 50,
@@ -401,7 +401,7 @@ class CarrerasData {
           "codigo": "CDE-4110",
           "asignatura": "Derecho Internac. Privado",
           "uv": 4,
-          "requisito": "CDE-298",
+          "requisito": "CDE-298"
         },
         {
           "id": 51,
@@ -409,7 +409,7 @@ class CarrerasData {
           "codigo": "CDE-4210",
           "asignatura": "Filosofía Derecho",
           "uv": 4,
-          "requisito": "CDE-298",
+          "requisito": "CDE-298"
         },
         {
           "id": 52,
@@ -417,7 +417,7 @@ class CarrerasData {
           "codigo": "CDE-4310",
           "asignatura": "Derecho Notar. y Registro Inmob.",
           "uv": 4,
-          "requisito": "CDE-298",
+          "requisito": "CDE-298"
         },
         {
           "id": 53,
@@ -425,7 +425,7 @@ class CarrerasData {
           "codigo": "CDE-4410",
           "asignatura": "Derecho Mercantil Especial",
           "uv": 4,
-          "requisito": "CDE-359",
+          "requisito": "CDE-359"
         },
         {
           "id": 54,
@@ -433,7 +433,7 @@ class CarrerasData {
           "codigo": "CDE-4510",
           "asignatura": "Propiedad Intelectual",
           "uv": 4,
-          "requisito": "CDE-359",
+          "requisito": "CDE-359"
         },
         {
           "id": 55,
@@ -441,7 +441,7 @@ class CarrerasData {
           "codigo": "CDE-4611",
           "asignatura": "Derecho Procesal Laboral",
           "uv": 4,
-          "requisito": "CDE-399",
+          "requisito": "CDE-399"
         },
         {
           "id": 56,
@@ -449,7 +449,7 @@ class CarrerasData {
           "codigo": "CDE-4711",
           "asignatura": "Derecho Procesal Penal",
           "uv": 4,
-          "requisito": "CDE-308",
+          "requisito": "CDE-308"
         },
         {
           "id": 57,
@@ -457,7 +457,7 @@ class CarrerasData {
           "codigo": "CDE-4811",
           "asignatura": "Justicia Administrativa",
           "uv": 4,
-          "requisito": "CDE-379",
+          "requisito": "CDE-379"
         },
         {
           "id": 58,
@@ -465,7 +465,7 @@ class CarrerasData {
           "codigo": "CDE-4911",
           "asignatura": "Ética Profesional",
           "uv": 3,
-          "requisito": "CDE-4210",
+          "requisito": "CDE-4210"
         },
         {
           "id": 59,
@@ -473,7 +473,7 @@ class CarrerasData {
           "codigo": "Seminario de investigación",
           "asignatura": "Seminario de investigación",
           "uv": 4,
-          "requisito": "T/F",
+          "requisito": "T/F"
         },
         {
           "id": 60,
@@ -481,13 +481,13 @@ class CarrerasData {
           "codigo": "CDE-5012",
           "asignatura": "Módulo de Práctica Procesal Civil",
           "uv": 4,
-          "requisito": "CDE-4210",
+          "requisito": "CDE-4210"
         },
         {
           "id": 61,
           "periodo": "DÉCIMO SEGUNDO MODULO",
           "codigo": "CDE-5112",
-          "asignatura": "Módulo de Práctica procesal penal",
+          "asignatura": "Módulo de Práctica Procesal Penal",
           "uv": 4,
           "requisito": "PASANTÍA A",
         },
@@ -495,7 +495,7 @@ class CarrerasData {
           "id": 63,
           "periodo": "DÉCIMO SEGUNDO MODULO",
           "codigo": "CDE-5212",
-          "asignatura": "Modulo de Criminalistica",
+          "asignatura": "Módulo de Criminalistica",
           "uv": 4,
           "requisito": "CDE-4210",
         },
@@ -503,7 +503,7 @@ class CarrerasData {
           "id": 64,
           "periodo": "DÉCIMO SEGUNDO MODULO",
           "codigo": "CDE-5413",
-          "asignatura": "Módulo de Practica Procesal Laboral",
+          "asignatura": "Módulo de Práctica Procesal Laboral",
           "uv": 4,
           "requisito": "CDE-4210",
         },
@@ -512,7 +512,7 @@ class CarrerasData {
           "periodo": "DÉCIMO SEGUNDO MODULO",
           "codigo": "CDE-5613",
           "asignatura":
-              "Módulo de Métodos Alternativos y Solucion de conﬂictos",
+              "Módulo de Métodos Alternativos y Solución de Conﬂictos",
           "uv": 4,
           "requisito": "PASANTÍA A",
         },
@@ -520,7 +520,7 @@ class CarrerasData {
           "id": 66,
           "periodo": "DÉCIMO SEGUNDO MODULO",
           "codigo": "CDE-5513",
-          "asignatura": "Módulo de Practica Procesal. Administrativa",
+          "asignatura": "Módulo de Práctica Procesal Administrativa",
           "uv": 4,
           "requisito": "PASANTÍA A",
         },
@@ -552,7 +552,7 @@ class CarrerasData {
           "id": 70,
           "periodo": "DÉCIMO TERCER MODULO",
           "codigo": "T/F",
-          "asignatura": "PRACTICA FORENSE OBLIGATORIA",
+          "asignatura": "PRÁCTICA FORENSE OBLIGATORIA",
           "uv": 4,
           "requisito": "T/F",
         },
@@ -621,7 +621,7 @@ class CarrerasData {
           "id": 6,
           "periodo": 2,
           "codigo": "EO-025",
-          "asignatura": "Redacción general",
+          "asignatura": "Redacción General",
           "uv": 3,
           "requisito": "EG-011",
         },
@@ -629,7 +629,7 @@ class CarrerasData {
           "id": 7,
           "periodo": 2,
           "codigo": "DET-280",
-          "asignatura": "Métodos cuantitativos II",
+          "asignatura": "Métodos Cuantitativos II",
           "uv": 5,
           "requisito": "DET-175",
         },
@@ -637,7 +637,7 @@ class CarrerasData {
           "id": 8,
           "periodo": 2,
           "codigo": "BI-130",
-          "asignatura": "Educación ambiental",
+          "asignatura": "Educación Ambiental",
           "uv": 3,
           "requisito": "Ninguno",
         },
@@ -645,7 +645,7 @@ class CarrerasData {
           "id": 9,
           "periodo": 2,
           "codigo": "RR-150-170",
-          "asignatura": "Educación Artística ó cultura física",
+          "asignatura": "Educación Artística ó Cultura Física",
           "uv": 3,
           "requisito": "Ninguno",
         },
@@ -653,7 +653,7 @@ class CarrerasData {
           "id": 10,
           "periodo": 2,
           "codigo": "CE-020",
-          "asignatura": "Principios de economía",
+          "asignatura": "Principios de Economía",
           "uv": 4,
           "requisito": "DET-175",
         },
@@ -661,7 +661,7 @@ class CarrerasData {
           "id": 11,
           "periodo": 3,
           "codigo": "CPE-0103",
-          "asignatura": "Derecho mercantil y laboral",
+          "asignatura": "Derecho Mercantil y Laboral",
           "uv": 4,
           "requisito": "SC-101",
         },
@@ -669,7 +669,7 @@ class CarrerasData {
           "id": 12,
           "periodo": 3,
           "codigo": "CPE-0203",
-          "asignatura": "Introducción a la contabilidad",
+          "asignatura": "Introducción a la Contabilidad",
           "uv": 4,
           "requisito": "DET-280",
         },
@@ -677,7 +677,7 @@ class CarrerasData {
           "id": 13,
           "periodo": 3,
           "codigo": "DET-385",
-          "asignatura": "Métodos cuantitativos III",
+          "asignatura": "Métodos Cuantitativos III",
           "uv": 5,
           "requisito": "DET-280",
         },
@@ -701,7 +701,7 @@ class CarrerasData {
           "id": 16,
           "periodo": 4,
           "codigo": "CPE-0304",
-          "asignatura": "Contabilidad ﬁnanciera I",
+          "asignatura": "Contabilidad Financiera I",
           "uv": 4,
           "requisito": "CPE-0203",
         },
@@ -933,7 +933,7 @@ class CarrerasData {
           "id": 45,
           "periodo": 10,
           "codigo": "CPE-2410",
-          "asignatura": "Contabilidad para entidades regualdas",
+          "asignatura": "Contabilidad Para Entidades Reguladas",
           "uv": 4,
           "requisito": "CPE-2009",
         },
@@ -1433,7 +1433,7 @@ class CarrerasData {
           "requisito": "Totalidad de los períodos anteriores",
         },
       ],
-      "Laboratorios de la carrera": [
+       "Laboratorios de la carrera": [
         {
           "id": 52,
           "LTE": "LTE",
@@ -1492,6 +1492,7 @@ class CarrerasData {
           "Espacio de Aprendizaje": "AGE-398, Gestión por Procesos",
         },
       ],
+      
     },
 
     {
@@ -2335,7 +2336,7 @@ class CarrerasData {
           "id": 5,
           "periodo": 1,
           "codigo": "IN101",
-          "asignatura": "Ingles I",
+          "asignatura": "Inglés I",
           "uv": 4,
           "requisito": "No tiene",
         },
@@ -2375,7 +2376,7 @@ class CarrerasData {
           "id": 10,
           "periodo": 2,
           "codigo": "IN102",
-          "asignatura": "Ingles II",
+          "asignatura": "Inglés II",
           "uv": 4,
           "requisito": "IN101",
         },
@@ -2407,7 +2408,7 @@ class CarrerasData {
           "id": 14,
           "periodo": 3,
           "codigo": "IN103",
-          "asignatura": "Ingles III",
+          "asignatura": "Inglés III",
           "uv": 4,
           "requisito": "IN102",
         },
@@ -2911,7 +2912,7 @@ class CarrerasData {
           "id": 5,
           "periodo": 2,
           "codigo": "MM-201",
-          "asignatura": "Calculo I",
+          "asignatura": "Cálculo I",
           "uv": 5,
           "requisito": "MM-110,MM-111",
         },
@@ -2935,7 +2936,7 @@ class CarrerasData {
           "id": 8,
           "periodo": 2,
           "codigo": "IN-102",
-          "asignatura": "Ingles I",
+          "asignatura": "Inglés I",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -3007,7 +3008,7 @@ class CarrerasData {
           "id": 17,
           "periodo": 5,
           "codigo": "OP-1 Ingeniería Eléctrica Industrial",
-          "asignatura": "Optativa Campo humanidades",
+          "asignatura": "Optativa Campo Humanidades",
           "uv": 3,
           "requisito": "EG-011",
         },
@@ -3015,7 +3016,7 @@ class CarrerasData {
           "id": 18,
           "periodo": 5,
           "codigo": "MM411",
-          "asignatura": "Ecuaciones diferenciales",
+          "asignatura": "Ecuaciones Diferenciales",
           "uv": 4,
           "requisito": "MM-202",
         },
@@ -3031,7 +3032,7 @@ class CarrerasData {
           "id": 20,
           "periodo": 5,
           "codigo": "FS200",
-          "asignatura": "Física general II (L)",
+          "asignatura": "Física General II (L)",
           "uv": 5,
           "requisito": "FS-100",
         },
@@ -3039,7 +3040,7 @@ class CarrerasData {
           "id": 21,
           "periodo": 6,
           "codigo": "IE-221",
-          "asignatura": "Circuitos eléctricos I (L)",
+          "asignatura": "Circuitos Eléctricos I (L)",
           "uv": 5,
           "requisito": "FS-100/IE-210",
         },
@@ -3055,7 +3056,7 @@ class CarrerasData {
           "id": 23,
           "periodo": 6,
           "codigo": "OP-2 Ingeniería Eléctrica Industrial",
-          "asignatura": "Optativa: Campo arte o deporte",
+          "asignatura": "Optativa Campo Arte o Deporte",
           "uv": 3,
           "requisito": "MM-201",
         },
@@ -3063,7 +3064,7 @@ class CarrerasData {
           "id": 24,
           "periodo": 6,
           "codigo": "FS-321",
-          "asignatura": "Electricidad y magnetismo I (L)",
+          "asignatura": "Electricidad y Magnetismo I (L)",
           "uv": 5,
           "requisito": "FS-200/MM-411",
         },
@@ -3071,7 +3072,7 @@ class CarrerasData {
           "id": 25,
           "periodo": 7,
           "codigo": "FS-415",
-          "asignatura": "Electricidad y magnetismo II (L)",
+          "asignatura": "Electricidad y Magnetismo II (L)",
           "uv": 5,
           "requisito": "FS-321",
         },
@@ -3079,7 +3080,7 @@ class CarrerasData {
           "id": 26,
           "periodo": 7,
           "codigo": "MM-412",
-          "asignatura": "Análisis numérico",
+          "asignatura": "Análisis Numérico",
           "uv": 3,
           "requisito": "MM-411/MM-314",
         },
@@ -3087,7 +3088,7 @@ class CarrerasData {
           "id": 27,
           "periodo": 7,
           "codigo": "IE-313",
-          "asignatura": "Métodos matemáticos para ingeniería",
+          "asignatura": "Métodos Matemáticos Para Ingeniería",
           "uv": 3,
           "requisito": "MM-411",
         },
@@ -3095,7 +3096,7 @@ class CarrerasData {
           "id": 28,
           "periodo": 7,
           "codigo": "IE-311",
-          "asignatura": "Circuitos eléctricos II (L)",
+          "asignatura": "Circuitos Eléctricos II (L)",
           "uv": 5,
           "requisito": "IE-221",
         },
@@ -3127,7 +3128,7 @@ class CarrerasData {
           "id": 32,
           "periodo": 8,
           "codigo": "IE-423",
-          "asignatura": "Teoría de la probabilidad",
+          "asignatura": "Teoría de la Probabilidad",
           "uv": 4,
           "requisito": "MM-401/MM-41",
         },
@@ -3135,7 +3136,7 @@ class CarrerasData {
           "id": 33,
           "periodo": 9,
           "codigo": "IE-421",
-          "asignatura": "Máquinas eléctricas I (L)",
+          "asignatura": "Máquinas Eléctricas I (L)",
           "uv": 5,
           "requisito": "IE-311/IE-313",
         },
@@ -3143,7 +3144,7 @@ class CarrerasData {
           "id": 34,
           "periodo": 9,
           "codigo": "MM-502",
-          "asignatura": "Variable compleja I",
+          "asignatura": "Variable Compleja I",
           "uv": 3,
           "requisito": "IE-416",
         },
@@ -3167,7 +3168,7 @@ class CarrerasData {
           "id": 37,
           "periodo": 10,
           "codigo": "IE-511",
-          "asignatura": "Máquinas eléctricas II (L)",
+          "asignatura": "Máquinas Eléctricas II (L)",
           "uv": 4,
           "requisito": "IE-421/ IE-416",
         },
@@ -3175,7 +3176,7 @@ class CarrerasData {
           "id": 38,
           "periodo": 10,
           "codigo": "II-411",
-          "asignatura": "Organización y métodos",
+          "asignatura": "Organización y Métodos",
           "uv": 4,
           "requisito": "MM-401",
         },
@@ -3183,7 +3184,7 @@ class CarrerasData {
           "id": 39,
           "periodo": 10,
           "codigo": "IE-415",
-          "asignatura": "Teoría de la estabilidad (L)",
+          "asignatura": "Teoría de la Estabilidad (L)",
           "uv": 3,
           "requisito": "IE-311/ IE-313",
         },
@@ -3191,7 +3192,7 @@ class CarrerasData {
           "id": 40,
           "periodo": 10,
           "codigo": "FF-201",
-          "asignatura": "Lógica matemática",
+          "asignatura": "Lógica Matemática",
           "uv": 3,
           "requisito": "MM-502",
         },
@@ -3199,7 +3200,7 @@ class CarrerasData {
           "id": 41,
           "periodo": 11,
           "codigo": "II-421",
-          "asignatura": "Ingeniería de métodos",
+          "asignatura": "Ingeniería de Métodos",
           "uv": 4,
           "requisito": "II-411",
         },
@@ -3207,7 +3208,7 @@ class CarrerasData {
           "id": 42,
           "periodo": 11,
           "codigo": "IE-515",
-          "asignatura": "Teoría de sistemas lineales",
+          "asignatura": "Teoría de Sistemas Lineales",
           "uv": 3,
           "requisito": "IE-415",
         },
@@ -3231,7 +3232,7 @@ class CarrerasData {
           "id": 45,
           "periodo": 12,
           "codigo": "II-511",
-          "asignatura": "Investigación de operaciones",
+          "asignatura": "Investigación de Operaciones",
           "uv": 3,
           "requisito": "II-421",
         },
@@ -3263,7 +3264,7 @@ class CarrerasData {
           "id": 49,
           "periodo": 13,
           "codigo": "II-521",
-          "asignatura": "Ingeniería económica",
+          "asignatura": "Ingeniería Económica",
           "uv": 3,
           "requisito": "II-511",
         },
@@ -3311,7 +3312,7 @@ class CarrerasData {
           "id": 55,
           "periodo": 14,
           "codigo": "IE-900",
-          "asignatura": "Seminario de investigación",
+          "asignatura": "Seminario de Investigación",
           "uv": null,
           "requisito": " Cursar ultimo periodo",
         },
@@ -3658,7 +3659,7 @@ class CarrerasData {
           "id": 8,
           "periodo": 2,
           "codigo": "EL-I Deportes",
-          "asignatura": "Campo de las Deportes",
+          "asignatura": "Campo de los Deportes",
           "uv": 3,
           "requisito": "Ninguno",
         },
@@ -3802,7 +3803,7 @@ class CarrerasData {
           "id": 26,
           "periodo": 7,
           "codigo": "IS-411",
-          "asignatura": "Electrónica para Ing. en Sistemas",
+          "asignatura": "Electrónica Para Ing. en Sistemas",
           "uv": 4,
           "requisito": "IS-311",
         },
@@ -3828,7 +3829,7 @@ class CarrerasData {
           "codigo": "IS-501",
           "asignatura": "Base de Datos I",
           "uv": 5,
-          "requisito": "MM-401, IS-410",
+          "requisito": "MM-401,IS-410",
         },
         {
           "id": 30,
@@ -3948,7 +3949,7 @@ class CarrerasData {
           "codigo": "OP-I",
           "asignatura": "Optativa I",
           "uv": 3,
-          "requisito": "Ver requisito",
+          "requisito": "IS-701",
         },
         {
           "id": 45,
@@ -4012,7 +4013,7 @@ class CarrerasData {
           "codigo": "OP-II",
           "asignatura": "Optativa II",
           "uv": 3,
-          "requisito": "Ver Requisito",
+          "requisito": "IS-820",
         },
         {
           "id": 53,
@@ -4036,7 +4037,7 @@ class CarrerasData {
           "codigo": "OP-III",
           "asignatura": "Optativa III",
           "uv": 3,
-          "requisito": "Ver Requisito",
+          "requisito": "IS-611",
         },
         {
           "id": 56,
@@ -4139,7 +4140,7 @@ class CarrerasData {
           "codigo": "MM-211",
           "asignatura": "Vectores y Matrices",
           "uv": 3,
-          "requisito": "MM-110, MM-111",
+          "requisito": "MM-110,MM-111",
         },
         {
           "id": 7,
@@ -4147,7 +4148,7 @@ class CarrerasData {
           "codigo": "QQ-206",
           "asignatura": "Química I",
           "uv": 5,
-          "requisito": "MM-110, MM-111",
+          "requisito": "MM-110,MM-111",
         },
         {
           "id": 8,
@@ -4187,7 +4188,7 @@ class CarrerasData {
           "codigo": "FS-100",
           "asignatura": "Física General",
           "uv": 5,
-          "requisito": "MM-201, MM-211",
+          "requisito": "MM-201,MM-211",
         },
         {
           "id": 9,
@@ -4217,7 +4218,7 @@ class CarrerasData {
           "id": 9,
           "periodo": "PRIMER PERÍODO / SEGUNDO AÑO",
           "codigo": "IN-102",
-          "asignatura": "Ingles II",
+          "asignatura": "Inglés II",
           "uv": 4,
           "requisito": "IN-101",
         },
@@ -4227,16 +4228,16 @@ class CarrerasData {
           "codigo": "FS-200",
           "asignatura": "Física II",
           "uv": 5,
-          "requisito": "FS-100, MM-202",
+          "requisito": "FS-100,MM-202",
         },
 
         {
           "id": 10,
           "periodo": "SEGUNDO PERÍODO / SEGUNDO AÑO",
           "codigo": "IM-224",
-          "asignatura": "Mecánica para Ingenieros I",
+          "asignatura": "Mecánica Para Ingenieros I",
           "uv": 4,
-          "requisito": "FS-100, MM-202",
+          "requisito": "FS-100,MM-202",
         },
         {
           "id": 11,
@@ -4252,7 +4253,7 @@ class CarrerasData {
           "codigo": "II-222",
           "asignatura": "Estadística Aplicada",
           "uv": 3,
-          "requisito": "MM-202, II-111",
+          "requisito": "MM-202,II-111",
         },
         {
           "id": 13,
@@ -4274,7 +4275,7 @@ class CarrerasData {
           "id": 15,
           "periodo": "TERCER PERÍODO / SEGUNDO AÑO",
           "codigo": "IN-103",
-          "asignatura": "Ingles III",
+          "asignatura": "Inglés III",
           "uv": 4,
           "requisito": "IN-102",
         },
@@ -4372,7 +4373,7 @@ class CarrerasData {
           "codigo": "II-313",
           "asignatura": "Contabilidad Ind. I",
           "uv": 4,
-          "requisito": "II-222, II-231",
+          "requisito": "II-222,II-231",
         },
         {
           "id": 25,
@@ -4412,7 +4413,7 @@ class CarrerasData {
           "codigo": "II-334",
           "asignatura": "Diseño de Producción",
           "uv": 3,
-          "requisito": "II-312, DQ-105",
+          "requisito": "II-312,DQ-105",
         },
         {
           "id": 30,
@@ -4524,7 +4525,7 @@ class CarrerasData {
           "codigo": "OP-I",
           "asignatura": "Optativa I",
           "uv": 3,
-          "requisito": null,
+          "requisito": "II-412,PS-940",
         },
         {
           "id": 44,
@@ -4532,7 +4533,7 @@ class CarrerasData {
           "codigo": "II-432",
           "asignatura": "Preparación y Evaluación de Proyecto",
           "uv": 4,
-          "requisito": "II-424, II-423",
+          "requisito": "II-424,II-423",
         },
         {
           "id": 45,
@@ -4701,7 +4702,7 @@ class CarrerasData {
           "id": 4,
           "periodo": "PRIMER PERÍODO / PRIMER AÑO",
           "codigo": "EG-101",
-          "asignatura": "Español general",
+          "asignatura": "Español General",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -4734,7 +4735,7 @@ class CarrerasData {
           "id": 11,
           "periodo": "PRIMER AÑO / TERCER PERÍODO",
           "codigo": "QQ-100",
-          "asignatura": "Química Fundamental.(L)",
+          "asignatura": "Química Fundamental (L)",
           "uv": 4,
           "requisito": "MM-110",
         },
@@ -4750,7 +4751,7 @@ class CarrerasData {
           "id": 13,
           "periodo": "PRIMER AÑO / TERCER PERÍODO",
           "codigo": "IN-101",
-          "asignatura": "Inglés general I",
+          "asignatura": "Inglés General I",
           "uv": 3,
           "requisito": "Ninguno",
         },
@@ -4776,13 +4777,13 @@ class CarrerasData {
           "codigo": "MM-411",
           "asignatura": "Ecuaciones Diferenciales",
           "uv": 3,
-          "requisito": "MM-201, MM-211",
+          "requisito": "MM-201,MM-211",
         },
         {
           "id": 17,
           "periodo": "PRIMER PERÍODO / SEGUNDO AÑO",
           "codigo": "IM-135",
-          "asignatura": "Introducción a la Ingeniería Mecánica.",
+          "asignatura": "Introducción a la Ingeniería Mecánica",
           "uv": 2,
           "requisito": "MM-202",
         },
@@ -4806,7 +4807,7 @@ class CarrerasData {
           "id": 19,
           "periodo": "SEGUNDO AÑO / SEGUNDO PERÍODO",
           "codigo": "FS-200",
-          "asignatura": "Física General II.(L)",
+          "asignatura": "Física General II (L)",
           "uv": 5,
           "requisito": "FS-100,MM-202",
         },
@@ -4830,15 +4831,15 @@ class CarrerasData {
           "id": 23,
           "periodo": "SEGUNDO AÑO / TERCER PERÍODO",
           "codigo": "M-212",
-          "asignatura": "Metalurgia.(L)",
+          "asignatura": "Metalurgia (L)",
           "uv": 4,
-          "requisito": "IM-224, QQ-100, IM-135",
+          "requisito": "IM-224,QQ-100,IM-135",
         },
         {
           "id": 24,
           "periodo": "SEGUNDO AÑO / TERCER PERÍODO",
           "codigo": "MM-314",
-          "asignatura": "Programación.(L)",
+          "asignatura": "Programación (L)",
           "uv": 3,
           "requisito": "MM-211",
         },
@@ -4854,7 +4855,7 @@ class CarrerasData {
           "id": 26,
           "periodo": "SEGUNDO AÑO / TERCER PERÍODO",
           "codigo": "IN-103",
-          "asignatura": "Inglés general III",
+          "asignatura": "Inglés General III",
           "uv": 4,
           "requisito": "IN-102",
         },
@@ -4878,7 +4879,7 @@ class CarrerasData {
           "id": 26,
           "periodo": "PRIMER PERÍODO / TERCER AÑO",
           "codigo": "IM-234",
-          "asignatura": "Mecánica para Ing. II",
+          "asignatura": "Mecánica Para Ing. II",
           "uv": 5,
           "requisito": "IM-224",
         },
@@ -4886,7 +4887,7 @@ class CarrerasData {
           "id": 26,
           "periodo": "PRIMER PERÍODO / TERCER AÑO",
           "codigo": "IM-315",
-          "asignatura": "Mecánica de Fluidos.(L)",
+          "asignatura": "Mecánica de Fluidos (L)",
           "uv": 3,
           "requisito": "FS-200",
         },
@@ -4918,7 +4919,7 @@ class CarrerasData {
           "id": 26,
           "periodo": "SEGUNDO PERÍODO / TERCER AÑO",
           "codigo": "IM-328",
-          "asignatura": "Termodinámica I.(L)",
+          "asignatura": "Termodinámica I (L)",
           "uv": 3,
           "requisito": "IM-315",
         },
@@ -4958,7 +4959,7 @@ class CarrerasData {
           "id": 27,
           "periodo": "TERCER PERÍODO / TERCER AÑO",
           "codigo": "IE-265",
-          "asignatura": "Electrotecnia I.(L)",
+          "asignatura": "Electrotecnia I (L)",
           "uv": 3,
           "requisito": "FS-200",
         },
@@ -4998,7 +4999,7 @@ class CarrerasData {
           "id": 28,
           "periodo": "PRIMER PERÍODO / CUARTO AÑO",
           "codigo": "IE-315",
-          "asignatura": "Electrotecnia II.(L)",
+          "asignatura": "Electrotecnia II (L)",
           "uv": 3,
           "requisito": "IM-234",
         },
@@ -5038,7 +5039,7 @@ class CarrerasData {
           "id": 36,
           "periodo": "TERCER PERÍODO / CUARTO AÑO",
           "codigo": "IM-414",
-          "asignatura": "Transferencia de Calor.(L)",
+          "asignatura": "Transferencia de Calor (L)",
           "uv": 3,
           "requisito": "IM-334",
         },
@@ -5046,7 +5047,7 @@ class CarrerasData {
           "id": 37,
           "periodo": "TERCER PERÍODO / CUARTO AÑO",
           "codigo": "IM-333",
-          "asignatura": "Procesos de Manufactura II.(L)",
+          "asignatura": "Procesos de Manufactura II (L)",
           "uv": 4,
           "requisito": "IM-323",
         },
@@ -5054,7 +5055,7 @@ class CarrerasData {
           "id": 38,
           "periodo": "TERCER PERÍODO / CUARTO AÑO",
           "codigo": "IM-332",
-          "asignatura": "Dinámica de Máquinas.",
+          "asignatura": "Dinámica de Máquinas",
           "uv": 3,
           "requisito": "IM-326",
         },
@@ -5070,7 +5071,7 @@ class CarrerasData {
           "id": 40,
           "periodo": "PRIMER PERÍODO / QUINTO AÑO",
           "codigo": "IM-529",
-          "asignatura": "Motores de Combustión Interna.(L)",
+          "asignatura": "Motores de Combustión Interna (L)",
           "uv": 3,
           "requisito": "DQ-103",
         },
@@ -5086,7 +5087,7 @@ class CarrerasData {
           "id": 42,
           "periodo": "PRIMER PERÍODO / QUINTO AÑO",
           "codigo": "IM-545",
-          "asignatura": "Plantas de Vapor. (L)",
+          "asignatura": "Plantas de Vapor (L)",
           "uv": 4,
           "requisito": "II-336, IM-414",
         },
@@ -5120,15 +5121,15 @@ class CarrerasData {
           "codigo": "OP-I",
           "asignatura": "Optativa I",
           "uv": 3,
-          "requisito": null,
+          "requisito": "IM-533, II-426",
         },
         {
           "id": 50,
           "periodo": "TERCER PERÍODO / QUINTO AÑO",
           "codigo": "OP-II",
-          "asignatura": "Optativa ll",
+          "asignatura": "Optativa II",
           "uv": 3,
-          "requisito": null,
+          "requisito": "IM-533, II-426",
         },
         {
           "id": 51,
@@ -5136,13 +5137,13 @@ class CarrerasData {
           "codigo": "IM-531",
           "asignatura": "Proyecto de Ingeniería Mecánica",
           "uv": 3,
-          "requisito": "II-418, IM-521",
+          "requisito": "II-418,IM-521",
         },
         {
           "id": 52,
           "periodo": "TERCER PERÍODO / QUINTO AÑO",
           "codigo": "IM-519",
-          "asignatura": "Aire Acondicionado.(L)",
+          "asignatura": "Aire Acondicionado (L)",
           "uv": 3,
           "requisito": "IM-640",
         },
@@ -5150,7 +5151,7 @@ class CarrerasData {
           "id": 53,
           "periodo": "TERCER PERÍODO / QUINTO AÑO",
           "codigo": "IM-532",
-          "asignatura": "Instalaciones Electromecánicas.(L)",
+          "asignatura": "Instalaciones Electromecánicas (L)",
           "uv": 3,
           "requisito": "IM-414,IE-315",
         },
@@ -5160,7 +5161,7 @@ class CarrerasData {
           "codigo": "IM-650",
           "asignatura": "Seminario de Investigación",
           "uv": 4,
-          "requisito": "T/F",
+          "requisito": "IM-414,IE-315",
         },
       ],
       "optativas": [
@@ -5200,7 +5201,7 @@ class CarrerasData {
           "id": 59,
           "periodo": "TERCER PERÍODO",
           "codigo": "IM-537",
-          "asignatura": "*Diseño por Computadora",
+          "asignatura": "Diseño por Computadora",
           "uv": 3,
           "requisito": "Ninguno",
         },
@@ -5301,14 +5302,14 @@ class CarrerasData {
           "id": 10,
           "periodo": 2,
           "codigo": "LT-165",
-          "asignatura": "Análisis de textos Literarios",
+          "asignatura": "Análisis de Textos Literarios",
           "uv": 4,
           "requisito": "LT-106",
         },
         {
           "id": 11,
           "periodo": 3,
-          "codigo": null,
+          "codigo": "LN-101",
           "asignatura": "Lengua Extranjera",
           "uv": 4,
           "requisito": "Ninguno",
@@ -5525,7 +5526,7 @@ class CarrerasData {
           "id": 48,
           "periodo": "NOVENO PERÍODO Orientación en Lingüística",
           "codigo": "LG-730",
-          "asignatura": "Enseñanza del Español como Segunda Lengua",
+          "asignatura": "Enseñanza del Español Como Segunda Lengua",
           "uv": 4,
           "requisito": "LG-505",
         },
@@ -5543,7 +5544,7 @@ class CarrerasData {
           "codigo": "LG-425",
           "asignatura": "Taller de Investigación Lingüística",
           "uv": 10,
-          "requisito": "LG-625, LG-725",
+          "requisito": "LG-625,LG-725",
         },
       ],
     },
@@ -5626,7 +5627,7 @@ class CarrerasData {
           "id": 10,
           "periodo": 2,
           "codigo": "LT-165",
-          "asignatura": "Análisis de textos Literarios",
+          "asignatura": "Análisis de Textos Literarios",
           "uv": 4,
           "requisito": "LT-106",
         },
@@ -5870,7 +5871,7 @@ class CarrerasData {
           "id": 41,
           "periodo": "Decimo / Orientación en Literatura",
           "codigo": "LT-725",
-          "asignatura": "Taller de investigación Literaria",
+          "asignatura": "Taller de Investigación Literaria",
           "uv": 10,
           "requisito": "LT-730",
         },
@@ -6299,7 +6300,7 @@ class CarrerasData {
           "codigo": "MM-201",
           "asignatura": "Cálculo I",
           "uv": 5,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 9,
@@ -6307,7 +6308,7 @@ class CarrerasData {
           "codigo": "MM-211",
           "asignatura": "Vectores y Matrices",
           "uv": 4,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 10,
@@ -6347,7 +6348,7 @@ class CarrerasData {
           "codigo": "MM-412",
           "asignatura": "Análisis Numérico",
           "uv": 4,
-          "requisito": "MM-411/314",
+          "requisito": "MM-411/MM-314",
         },
         {
           "id": 15,
@@ -6371,7 +6372,7 @@ class CarrerasData {
           "codigo": "MM-408",
           "asignatura": "Cálculo III",
           "uv": 4,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 18,
@@ -6379,7 +6380,7 @@ class CarrerasData {
           "codigo": "MM-418",
           "asignatura": "Programación II",
           "uv": 4,
-          "requisito": "MM-211/420",
+          "requisito": "MM-211/MM-420",
         },
         {
           "id": 19,
@@ -6403,7 +6404,7 @@ class CarrerasData {
           "codigo": "MM-435",
           "asignatura": "Procesos Estocast.",
           "uv": 4,
-          "requisito": "MM-211/420",
+          "requisito": "MM-211/MM-420",
         },
         {
           "id": 22,
@@ -6419,7 +6420,7 @@ class CarrerasData {
           "codigo": "MM-423",
           "asignatura": "Algebra Lin. Num.",
           "uv": 4,
-          "requisito": "MM-420/314",
+          "requisito": "MM-420/MM-314",
         },
         {
           "id": 24,
@@ -6467,7 +6468,7 @@ class CarrerasData {
           "codigo": "MM-428",
           "asignatura": "Análisis Matem. I",
           "uv": 4,
-          "requisito": "MM-517 más 8 asignaturas de la orientación respectiva",
+          "requisito": "MM-517,MM-428",
         },
         {
           "id": 30,
@@ -6656,7 +6657,7 @@ class CarrerasData {
           "codigo": "MM-201",
           "asignatura": "Cálculo I",
           "uv": 5,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 9,
@@ -6664,7 +6665,7 @@ class CarrerasData {
           "codigo": "MM-211",
           "asignatura": "Vectores y Matrices",
           "uv": 4,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 10,
@@ -6712,7 +6713,7 @@ class CarrerasData {
           "codigo": "MM-412",
           "asignatura": "Análisis Numérico",
           "uv": 4,
-          "requisito": "MM-411/314",
+          "requisito": "MM-411/MM-314",
         },
         {
           "id": 16,
@@ -6728,7 +6729,7 @@ class CarrerasData {
           "codigo": "MM-421",
           "asignatura": "Estruct. Alg. I",
           "uv": 4,
-          "requisito": "MM-420/314",
+          "requisito": "MM-420/MM-314",
         },
         {
           "id": 18,
@@ -6744,7 +6745,7 @@ class CarrerasData {
           "codigo": "MM-422",
           "asignatura": "Algebra Lin. Num.",
           "uv": 4,
-          "requisito": "MM-211/420",
+          "requisito": "MM-211/MM-420",
         },
         {
           "id": 20,
@@ -6752,7 +6753,7 @@ class CarrerasData {
           "codigo": "MM-424",
           "asignatura": "Matemática Discreta",
           "uv": 3,
-          "requisito": "MM-420/314",
+          "requisito": "MM-420/MM-314",
         },
         {
           "id": 21,
@@ -6864,7 +6865,7 @@ class CarrerasData {
           "codigo": "MM-700",
           "asignatura": "Seminario de Investigación",
           "uv": 5,
-          "requisito": "MM-517 más 8 asignaturas de la orientación respectiva",
+          "requisito": "MM-517,MM-520",
         },
         {
           "id": 35,
@@ -6872,7 +6873,7 @@ class CarrerasData {
           "codigo": "MM-531",
           "asignatura": "Mét. Lineales",
           "uv": 4,
-          "requisito": "MM-531/551",
+          "requisito": "MM-531/MM-551",
         },
         {
           "id": 36,
@@ -7013,7 +7014,7 @@ class CarrerasData {
           "codigo": "MM-201",
           "asignatura": "Cálculo I",
           "uv": 5,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 9,
@@ -7021,7 +7022,7 @@ class CarrerasData {
           "codigo": "MM-211",
           "asignatura": "Vectores y Matrices",
           "uv": 4,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 10,
@@ -7101,7 +7102,7 @@ class CarrerasData {
           "codigo": "MM-552",
           "asignatura": "Mod. de Invent.",
           "uv": 4,
-          "requisito": "MM-531/551",
+          "requisito": "MM-531/MM-551",
         },
         {
           "id": 20,
@@ -7157,7 +7158,7 @@ class CarrerasData {
           "codigo": "MM-420",
           "asignatura": "Programación II",
           "uv": 4,
-          "requisito": "MM-211/201",
+          "requisito": "MM-211/MM-201",
         },
         {
           "id": 27,
@@ -7165,7 +7166,7 @@ class CarrerasData {
           "codigo": "MM-421",
           "asignatura": "Matemática Discreta",
           "uv": 3,
-          "requisito": "MM-202/211",
+          "requisito": "MM-202/MM-211",
         },
         {
           "id": 28,
@@ -7181,7 +7182,7 @@ class CarrerasData {
           "codigo": "MM-424",
           "asignatura": "Estruct. De Datos",
           "uv": 4,
-          "requisito": "MM-110/111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 30,
@@ -7261,7 +7262,7 @@ class CarrerasData {
           "codigo": "MM-524",
           "asignatura": "Sistemas Dinámicos II",
           "uv": 4,
-          "requisito": "MM-517 más 8 asignaturas de la orientación respectiva",
+          "requisito": "MM-517,MM-523",
         },
         {
           "id": 40,
@@ -7345,7 +7346,7 @@ class CarrerasData {
           "id": 5,
           "periodo": 1,
           "codigo": "MM-100",
-          "asignatura": "Introducción a la estadística social",
+          "asignatura": "Introducción a la Estadística Social",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -7449,7 +7450,7 @@ class CarrerasData {
           "id": 18,
           "periodo": 3,
           "codigo": "PA-110",
-          "asignatura": "Teorías y sistemas Educativos I",
+          "asignatura": "Teorías y Sistemas Educativos I",
           "uv": 4,
           "requisito": "PA-101",
         },
@@ -7758,7 +7759,7 @@ class CarrerasData {
           "id": 5,
           "periodo": 1,
           "codigo": "MM-100",
-          "asignatura": "Introducción a la estadística social",
+          "asignatura": "Introducción a la Estadística Social",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -7918,7 +7919,7 @@ class CarrerasData {
           "id": 25,
           "periodo": 4,
           "codigo": "PA-116",
-          "asignatura": "Teorías y sistemas Educativos II",
+          "asignatura": "Teorías y Sistemas Educativos II",
           "uv": 4,
           "requisito": "PA-110",
         },
@@ -8118,7 +8119,7 @@ class CarrerasData {
           "id": 50,
           "periodo": 8,
           "codigo": "PA-603",
-          "asignatura": "Taller de práctica Uniprofesional Supervisada III",
+          "asignatura": "Taller de Práctica Uniprofesional Supervisada III",
           "uv": "140HRS",
           "requisito": "*BA, PA-602",
         },
@@ -8133,8 +8134,7 @@ class CarrerasData {
       ],
     },
     {
-      "carrera":
-          "Pedagogía y Ciencias de la Educación / Orientación en Educacion de adultos",
+      "carrera": "Pedagogía y Ciencias de la Educación / Orientación en Educacion de adultos",
       "materias": [
         {
           "id": 1,
@@ -8172,7 +8172,7 @@ class CarrerasData {
           "id": 5,
           "periodo": 1,
           "codigo": "MM-100",
-          "asignatura": "Introducción a la estadística social",
+          "asignatura": "Introducción a la Estadística Social",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -8388,7 +8388,7 @@ class CarrerasData {
           "id": 32,
           "periodo": 5,
           "codigo": "PA-302",
-          "asignatura": "Psicología social",
+          "asignatura": "Psicología Social",
           "uv": 4,
           "requisito": "PA-112",
         },
@@ -8412,7 +8412,7 @@ class CarrerasData {
           "id": 35,
           "periodo": 6,
           "codigo": "PA-408",
-          "asignatura": "Sociología Urbana y rural",
+          "asignatura": "Sociología Urbana y Rural",
           "uv": 3,
           "requisito": "SC-101",
         },
@@ -8492,7 +8492,7 @@ class CarrerasData {
           "id": 44,
           "periodo": 7,
           "codigo": "PA-407",
-          "asignatura": "Metodología de la Educación de adultos",
+          "asignatura": "Metodología de la Educación de Adultos",
           "uv": 5,
           "requisito": "PA-405",
         },
@@ -8556,7 +8556,7 @@ class CarrerasData {
           "id": 52,
           "periodo": 9,
           "codigo": "PA-604",
-          "asignatura": "Practica Profesional Supervisada",
+          "asignatura": "Práctica Profesional Supervisada",
           "uv": "400 HRS",
           "requisito": "EGRESADO",
         },
@@ -8602,7 +8602,7 @@ class CarrerasData {
           "id": 5,
           "periodo": 1,
           "codigo": "MM-100",
-          "asignatura": "Introducción a la estadística social",
+          "asignatura": "Introducción a la Estadística Social",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -8762,7 +8762,7 @@ class CarrerasData {
           "id": 25,
           "periodo": 4,
           "codigo": "PA-116",
-          "asignatura": "Teorías y sistemas Educativos II",
+          "asignatura": "Teorías y Sistemas Educativos II",
           "uv": 4,
           "requisito": "PA-110",
         },
@@ -8818,7 +8818,7 @@ class CarrerasData {
           "id": 32,
           "periodo": 5,
           "codigo": "PA-302",
-          "asignatura": "Psicología social",
+          "asignatura": "Psicología Social",
           "uv": 4,
           "requisito": "PA-112",
         },
@@ -8890,7 +8890,7 @@ class CarrerasData {
           "id": 41,
           "periodo": 6,
           "codigo": "PA-601",
-          "asignatura": "Taller de Practica Uniprofesional Supervisada",
+          "asignatura": "Taller de Práctica Uniprofesional Supervisada",
           "uv": "130HRS",
           "requisito": "*BA",
         },
@@ -8906,7 +8906,7 @@ class CarrerasData {
           "id": 43,
           "periodo": 7,
           "codigo": "PA-512",
-          "asignatura": "Didáctica Especial lecto Escritura II",
+          "asignatura": "Didáctica Especial Lecto Escritura II",
           "uv": 3,
           "requisito": "PA-509",
         },
@@ -9010,7 +9010,7 @@ class CarrerasData {
           "id": 56,
           "periodo": 8,
           "codigo": "PA-603",
-          "asignatura": "Taller de practica Uniprofesional Supervisada III",
+          "asignatura": "Taller de Práctica Uniprofesional Supervisada III",
           "uv": "140HR",
           "requisito": "PA-514",
         },
@@ -9018,7 +9018,7 @@ class CarrerasData {
           "id": 57,
           "periodo": 9,
           "codigo": "PA-604",
-          "asignatura": "Practica Profesional Supervisada 400HRS",
+          "asignatura": "Práctica Profesional Supervisada 400HRS",
           "uv": "400HRS",
           "requisito": "EGRESADO",
         },
@@ -9227,7 +9227,7 @@ class CarrerasData {
           "codigo": "PER-225",
           "asignatura": "Ética y Legislación de Prensa",
           "uv": 4,
-          "requisito": "PER- 131; PER-121",
+          "requisito": "PER- 131;PER-121",
         },
         {
           "id": 25,
@@ -9251,7 +9251,7 @@ class CarrerasData {
           "codigo": "PER-233",
           "asignatura": "Géneros Periodísticos II",
           "uv": 5,
-          "requisito": "PER-321, PER-324",
+          "requisito": "PER-321,PER-324",
         },
         {
           "id": 28,
@@ -9711,8 +9711,7 @@ class CarrerasData {
           "id": 35,
           "periodo": 9,
           "codigo": "PSE-249",
-          "asignatura":
-              "Psicología de los Grupos y del Comportamiento Colectivo",
+          "asignatura": "Psicología de los Grupos y del Comportamiento Colectivo",
           "uv": 4,
           "requisito": "PSE-218",
         },
@@ -9943,7 +9942,7 @@ class CarrerasData {
           "codigo": "LS-214",
           "asignatura": "Lógica Aplicada a las Ciencias\nSociales",
           "uv": 3,
-          "requisito": "SC-101 , FF-101",
+          "requisito": "SC-101,FF-101",
         },
         {
           "id": 11,
@@ -10031,7 +10030,7 @@ class CarrerasData {
           "codigo": "LS-105",
           "asignatura": "Teoría de las Clases Sociales",
           "uv": 4,
-          "requisito": "LS-104/LS-204/H101",
+          "requisito": "LS-104/LS-204/HH-101",
         },
         {
           "id": 23,
@@ -10061,7 +10060,7 @@ class CarrerasData {
           "id": 26,
           "periodo": 5,
           "codigo": "PS-101",
-          "asignatura": "Psicología general",
+          "asignatura": "Psicología General",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -10111,7 +10110,7 @@ class CarrerasData {
           "codigo": "LS-107",
           "asignatura": "Sociología Rural II",
           "uv": 4,
-          "requisito": "LS-112-219",
+          "requisito": "LS-112,LS-219",
         },
         {
           "id": 33,
@@ -10135,7 +10134,7 @@ class CarrerasData {
           "codigo": "LS-402",
           "asignatura": "Sociología Política II",
           "uv": 4,
-          "requisito": "LS-401, LS-414",
+          "requisito": "LS-401,LS-414",
         },
 
         {
@@ -10176,7 +10175,7 @@ class CarrerasData {
           "codigo": "LS-111",
           "asignatura": "Sociología de los Movimientos Sociales II",
           "uv": 4,
-          "requisito": "LS-110/ LS-206 ",
+          "requisito": "LS-110/LS-206 ",
         },
         {
           "id": 43,
@@ -10232,13 +10231,13 @@ class CarrerasData {
           "codigo": "LS-208",
           "asignatura": "Taller de Sociología Aplicada",
           "uv": 4,
-          "requisito": "LS-112/ LS-219 ",
+          "requisito": "LS-112/LS-219 ",
         },
         {
           "id": 52,
           "periodo": 11,
           "codigo": "LS-220",
-          "asignatura": "Taller de Investigación  Sociológica I",
+          "asignatura": "Taller de Investigación Sociológica I",
           "uv": 4,
           "requisito": "LS-112/LS-219",
         },
@@ -10317,7 +10316,7 @@ class CarrerasData {
           "codigo": "QQ-100",
           "asignatura": "Química Fundamental",
           "uv": 4,
-          "requisito": "MM-110 / MM-111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 7,
@@ -10381,7 +10380,7 @@ class CarrerasData {
           "codigo": "TCNC-143",
           "asignatura": "Metrología",
           "uv": 3,
-          "requisito": "MM-110 / MM-111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 15,
@@ -10389,7 +10388,7 @@ class CarrerasData {
           "codigo": "FS-107",
           "asignatura": "Física Tecnólogo Universitario",
           "uv": 6,
-          "requisito": "MM-110 / MM-111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 16,
@@ -10405,7 +10404,7 @@ class CarrerasData {
           "codigo": "TCNC-174",
           "asignatura": "Diseño Asistido por Computadora",
           "uv": 4,
-          "requisito": "DQ-102/ IAG-102",
+          "requisito": "DQ-102/IAG-102",
         },
         {
           "id": 18,
@@ -10413,7 +10412,7 @@ class CarrerasData {
           "codigo": "TCNC-184",
           "asignatura": "Módulo de Torno y Fresadora Convencional",
           "uv": 5,
-          "requisito": "TCNC-072/ TCNC-143",
+          "requisito": "TCNC-072/TCNC-143",
         },
         {
           "id": 19,
@@ -10421,7 +10420,7 @@ class CarrerasData {
           "codigo": "TCNC-194",
           "asignatura": "Ciencia de los Materiales",
           "uv": 3,
-          "requisito": "QQ-100 / FS-107",
+          "requisito": "QQ-100/FS-107",
         },
         {
           "id": 20,
@@ -10453,7 +10452,7 @@ class CarrerasData {
           "codigo": "TCNC-235",
           "asignatura": "Procesos de Manufactura",
           "uv": 4,
-          "requisito": "TCNC-143/ TCNC-194",
+          "requisito": "TCNC-143/TCNC-194",
         },
         {
           "id": 24,
@@ -10461,7 +10460,7 @@ class CarrerasData {
           "codigo": "TCNC-245",
           "asignatura": "Módulo de Torno y Fresadora en CNC",
           "uv": 6,
-          "requisito": "TCNC-184/ TCNC-194",
+          "requisito": "TCNC-184/TCNC-194",
         },
         {
           "id": 25,
@@ -10469,7 +10468,7 @@ class CarrerasData {
           "codigo": "TCNC-256",
           "asignatura": "Elementos de Máquinas",
           "uv": 2,
-          "requisito": "TCNC-215 / TCNC-235",
+          "requisito": "TCNC-215/TCNC-235",
         },
         {
           "id": 26,
@@ -10509,21 +10508,21 @@ class CarrerasData {
           "codigo": "TCNC-307",
           "asignatura": "Diseño Moldes y Dados",
           "uv": 5,
-          "requisito": "TCNC-245 / TCNC-276",
+          "requisito": "TCNC-245/TCNC-276",
         },
         {
           "id": 31,
           "periodo": "SEGUNDO / TERCER AÑO",
           "codigo": "",
-          "asignatura": "400 HORAS DE PRACTICA PROFESIONAL SUPERVISADA",
+          "asignatura": "400 HORAS DE PRÁCTICA PROFESIONAL SUPERVISADA",
           "uv": 5,
-          "requisito": "T/F",
+          "requisito": "TCNC-245/TCNC-276",
         },
       ],
     },
 
     {
-      "carrera": "Licenciatura en Quimica Industrial",
+      "carrera": "Licenciatura en Química Industrial",
       "materias": [
         {
           "id": 1,
@@ -10625,7 +10624,7 @@ class CarrerasData {
           "id": 13,
           "periodo": 4,
           "codigo": "QI-221",
-          "asignatura": "Química inorgánica I",
+          "asignatura": "Química Inorgánica I",
           "uv": 4,
           "requisito": "QI-113",
         },
@@ -10755,7 +10754,7 @@ class CarrerasData {
           "codigo": "QI-343",
           "asignatura": "Análisis Instrumental",
           "uv": 4,
-          "requisito": "QI-342;FS-27",
+          "requisito": "QI-342;FS-277",
         },
         {
           "id": 30,
@@ -10779,7 +10778,7 @@ class CarrerasData {
           "codigo": "EL-I",
           "asignatura": "(Ciencias Naturales)",
           "uv": 3,
-          "requisito": null,
+          "requisito": "Ninguno",
         },
         {
           "id": 33,
@@ -10803,7 +10802,7 @@ class CarrerasData {
           "codigo": "QI-335",
           "asignatura": "Bioquímica",
           "uv": 4,
-          "requisito": "BI-121, QI-334",
+          "requisito": "BI-121,QI-334",
         },
         {
           "id": 36,
@@ -10811,7 +10810,7 @@ class CarrerasData {
           "codigo": "EL-II",
           "asignatura": "(Arte o Deporte)",
           "uv": 3,
-          "requisito": null,
+          "requisito": "Ninguno",
         },
         {
           "id": 37,
@@ -10819,7 +10818,7 @@ class CarrerasData {
           "codigo": "QI-481",
           "asignatura": "Procesos en la Industria Química",
           "uv": 8,
-          "requisito": "APB IX Período",
+          "requisito": "QI-335,QI-352,QI-371",
         },
         {
           "id": 38,
@@ -10827,7 +10826,7 @@ class CarrerasData {
           "codigo": "QI-482",
           "asignatura": "Metalurgia Aplicada",
           "uv": 8,
-          "requisito": "APB IX Período",
+          "requisito": "QI-335,QI-352,QI-371",
         },
         {
           "id": 39,
@@ -10835,7 +10834,7 @@ class CarrerasData {
           "codigo": "EL-III",
           "asignatura": "(Lenguas Extranjeras)",
           "uv": 4,
-          "requisito": null,
+          "requisito": "Ninguno",
         },
         {
           "id": 40,
@@ -10843,7 +10842,7 @@ class CarrerasData {
           "codigo": "QI-483",
           "asignatura": "Bioquímica Industrial",
           "uv": 8,
-          "requisito": "APB IX Período",
+          "requisito": "QI-335,QI-352,QI-371",
         },
         {
           "id": 41,
@@ -10851,7 +10850,7 @@ class CarrerasData {
           "codigo": "QI-485",
           "asignatura": "Conservación de Alimentos",
           "uv": 8,
-          "requisito": "APB IX Período",
+          "requisito": "QI-335,QI-352,QI-371",
         },
         {
           "id": 42,
@@ -10859,7 +10858,7 @@ class CarrerasData {
           "codigo": "QI-484",
           "asignatura": "Administración de la Producción",
           "uv": 8,
-          "requisito": "APB IX Período",
+          "requisito": "QI-335,QI-352,QI-371",
         },
         {
           "id": 43,
@@ -10867,7 +10866,7 @@ class CarrerasData {
           "codigo": "QI-472",
           "asignatura": "Proyectos",
           "uv": 4,
-          "requisito": "APB IX Período",
+          "requisito": "QI-335,QI-352,QI-371",
         },
         {
           "id": 44,
@@ -10875,7 +10874,7 @@ class CarrerasData {
           "codigo": "EL-IV",
           "asignatura": "(Humanidades)",
           "uv": 3,
-          "requisito": null,
+          "requisito": "Ninguno",
         },
         {
           "id": 45,
@@ -10883,13 +10882,13 @@ class CarrerasData {
           "codigo": "QI-071",
           "asignatura": "Seminario de Investigación",
           "uv": 4,
-          "requisito": "Estar en el último Período de la carrera",
+          "requisito": "QI-472,QI-484,QI-485",
         },
       ],
     },
 
     {
-      "carrera": "Técnico Universatorio En Seguridad e Higiene Industrial",
+      "carrera": "Técnico Universitario En Seguridad e Higiene Industrial",
       "materias": [
         {
           "id": 1,
@@ -10953,13 +10952,13 @@ class CarrerasData {
           "codigo": "QQ-100",
           "asignatura": "Química Fundamental",
           "uv": 4,
-          "requisito": "MM-110 / MM-111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 9,
           "periodo": "SEGUNDO PERÍODO / PRIMER AÑO",
           "codigo": "TSHI-092",
-          "asignatura": "Normativa y legislación nacional",
+          "asignatura": "Normativa y Legislación Nacional",
           "uv": 3,
           "requisito": "TSHI-031",
         },
@@ -10993,14 +10992,13 @@ class CarrerasData {
           "codigo": "FS-106",
           "asignatura": "Física Básica",
           "uv": 5,
-          "requisito": "MM-110 / MM-111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 14,
           "periodo": "TERCER PERÍODO / PRIMER AÑO",
           "codigo": "TSHI-143",
-          "asignatura":
-              "Sistemas de Información de Seguridad e Higiene Industrial",
+          "asignatura": "Sistemas de Información de Seguridad e Higiene Industrial",
           "uv": 4,
           "requisito": "TSHI-031",
         },
@@ -11019,7 +11017,7 @@ class CarrerasData {
           "codigo": "TCNC-143",
           "asignatura": "Metrología",
           "uv": 3,
-          "requisito": "MM-110 / MM-111",
+          "requisito": "MM-110/MM-111",
         },
         {
           "id": 17,
@@ -11035,7 +11033,7 @@ class CarrerasData {
           "codigo": "TSHI-174",
           "asignatura": "Seguridad en Edificios",
           "uv": 4,
-          "requisito": "TSHI-143 / TSHI-153",
+          "requisito": "TSHI-143/TSHI-153",
         },
         {
           "id": 19,
@@ -11059,7 +11057,7 @@ class CarrerasData {
           "codigo": "TSHI-215",
           "asignatura": "Ruidos y Vibraciones",
           "uv": 3,
-          "requisito": "TCNC-143 / TSHI-174",
+          "requisito": "TCNC-143/TSHI-174",
         },
         {
           "id": 22,
@@ -11067,7 +11065,7 @@ class CarrerasData {
           "codigo": "TSHI-225",
           "asignatura": "Ventilación y Temperatura",
           "uv": 3,
-          "requisito": "TCNC-143 / TSHI-174",
+          "requisito": "TCNC-143/TSHI-174",
         },
         {
           "id": 23,
@@ -11075,7 +11073,7 @@ class CarrerasData {
           "codigo": "TSHI-235",
           "asignatura": "Iluminación y Color",
           "uv": 3,
-          "requisito": "TCNC-143 / TSHI-174",
+          "requisito": "TCNC-143/TSHI-174",
         },
         {
           "id": 24,
@@ -11091,7 +11089,7 @@ class CarrerasData {
           "codigo": "TSHI-255",
           "asignatura": "Ergonomía",
           "uv": 5,
-          "requisito": "TSHI-164 / TSHI-204",
+          "requisito": "TSHI-164/TSHI-204",
         },
         {
           "id": 26,
@@ -11107,7 +11105,7 @@ class CarrerasData {
           "codigo": "TSHI-266",
           "asignatura": "Relaciones Humanas",
           "uv": 3,
-          "requisito": "TSHI-164 / TSHI-204",
+          "requisito": "TSHI-164/TSHI-204",
         },
         {
           "id": 28,
@@ -11123,7 +11121,7 @@ class CarrerasData {
           "codigo": "TSHI-286",
           "asignatura": "Higiene Ambiental",
           "uv": 3,
-          "requisito": "TSHI-215 / TSHI-225 / TSHI-235",
+          "requisito": "TSHI-215/TSHI-225/TSHI-235",
         },
         {
           "id": 30,
@@ -11137,10 +11135,9 @@ class CarrerasData {
           "id": 31,
           "periodo": "PRIMER PERÍODO / TERCER AÑO",
           "codigo": "",
-          "asignatura": "PRACTICA PROFESIONAL DE 300 HORAS ",
+          "asignatura": "PRÁCTICA PROFESIONAL DE 300 HORAS ",
           "uv": 5,
-          "requisito":
-              "HABER REALIZADO LAS PRIMERAS 100 HORAS DE PRACTICA PROFESIONAL Y LAS CLASES HASTA EL SEXTO PERIODO",
+          "requisito":"TSHI-255/TSHI-266/TSHI-276/TSHI-286/TSHI-307",
         },
       ],
     },
@@ -11223,7 +11220,7 @@ class CarrerasData {
           "id": 10,
           "periodo": "2, Primer año, Periodo de 20 semanas 2",
           "codigo": "MH-111",
-          "asignatura": "Morfología humana",
+          "asignatura": "Morfología Humana",
           "uv": 6,
           "requisito": "BI-121",
         },
@@ -11239,7 +11236,7 @@ class CarrerasData {
           "id": 12,
           "periodo": "3, Primer año",
           "codigo": "MM-100",
-          "asignatura": "Int. Estadística social",
+          "asignatura": "Int. Estadística Social",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -11255,7 +11252,7 @@ class CarrerasData {
           "id": 14,
           "periodo": "1, Segundo año",
           "codigo": "IN-101",
-          "asignatura": "Ingles I",
+          "asignatura": "Inglés I",
           "uv": 4,
           "requisito": "Ninguno",
         },
@@ -11489,17 +11486,16 @@ class CarrerasData {
           "codigo": "EN-262",
           "asignatura": "Ejercicio Profesional",
           "uv": 5,
-          "requisito":
-              "*Haber completado \n42 asignaturas del\n plan de estudios.",
+          "requisito":"EN-221",
         },
         {
           "id": 45,
           "periodo": "Quinto año",
           "codigo": "EN-281",
           "asignatura":
-              "Servicio Social (LA DURACION DE 6 MESES Aprobado por el Consejo Universitario mediante acuerdo N°. CU-E-018-03-\n2021.)",
+              "Servicio Social (LA DURACION DE 6 MESES Aprobado por el Consejo Universitario Mediante Acuerdo N°. CU-E-018-03-\n2021.)",
           "uv": 20,
-          "requisito": "Haber completado 43 asignaturas del plan de estudios",
+          "requisito": "FH-051,FC-031",
         },
       ],
     },
@@ -11582,7 +11578,7 @@ class CarrerasData {
           "id": 10,
           "periodo": "SEGUNDO PERÍODO",
           "codigo": "IN-102",
-          "asignatura": "Ingles II",
+          "asignatura": "Inglés II",
           "uv": 4,
           "requisito": "IN-101",
         },
@@ -11656,8 +11652,7 @@ class CarrerasData {
           "codigo": "AM-121",
           "asignatura": "Anatomía Macro",
           "uv": 7,
-          "requisito":
-              "Todas las \nanteriores excepto \nArte o Deporte e \nIntrodcción a la \nSalud",
+          "requisito":"MM-241,SP-101,FS-210",
         },
         {
           "id": 20,
@@ -11665,7 +11660,7 @@ class CarrerasData {
           "codigo": "EL-124",
           "asignatura": "Embriología",
           "uv": 7,
-          "requisito": "Todas hasta el IV\nPeríodo\n(Segundo año)",
+          "requisito": "MM-241,SP-101,FS-210",
         },
         {
           "id": 21,
@@ -11673,7 +11668,7 @@ class CarrerasData {
           "codigo": "NA-123",
           "asignatura": "Neuroanatomía",
           "uv": 7,
-          "requisito": "Todas hasta el \nV año",
+          "requisito": "MM-241,SP-101,FS-210",
         },
         {
           "id": 22,
@@ -11681,7 +11676,7 @@ class CarrerasData {
           "codigo": "AI-122",
           "asignatura": "Anatomía Micro",
           "uv": 7,
-          "requisito": "Todas hasta el \nIV año",
+          "requisito": "MM-241,SP-101,FS-210",
         },
         {
           "id": 23,
@@ -11689,7 +11684,7 @@ class CarrerasData {
           "codigo": "FO-101",
           "asignatura": "Fisiología",
           "uv": 11,
-          "requisito": "Todas hasta el \nVI año",
+          "requisito": "MM-241,SP-101,FS-210",
         },
         {
           "id": 24,
@@ -11697,7 +11692,7 @@ class CarrerasData {
           "codigo": "BQ-113",
           "asignatura": "Bioquímica",
           "uv": 7,
-          "requisito": "Requisito",
+          "requisito": "MM-241,SP-101,FS-210",
         },
         {
           "id": 25,
@@ -11705,7 +11700,7 @@ class CarrerasData {
           "codigo": "PS-110",
           "asignatura": "Psicología Médica",
           "uv": 6,
-          "requisito": "Requisito",
+          "requisito": "MM-241,SP-101,FS-210",
         },
         {
           "id": 26,
@@ -11713,7 +11708,7 @@ class CarrerasData {
           "codigo": "SP-211",
           "asignatura": "Salud Pública I",
           "uv": 6,
-          "requisito": "PA-100,PG-201,\nFP-211,CI-100",
+          "requisito": "PA-100,PG-201,FP-211,CI-100",
         },
         {
           "id": 27,
@@ -11729,7 +11724,7 @@ class CarrerasData {
           "codigo": "MI-134",
           "asignatura": "Genética",
           "uv": 5,
-          "requisito": "Requisito",
+          "requisito": "PA-100,PG-201",
         },
         {
           "id": 29,
@@ -11785,7 +11780,7 @@ class CarrerasData {
           "codigo": "PA-200",
           "asignatura": "Patología II",
           "uv": 7,
-          "requisito": "Ninguno",
+          "requisito": "PA-100",
         },
         {
           "id": 36,
@@ -11793,7 +11788,7 @@ class CarrerasData {
           "codigo": "PG-202",
           "asignatura": "Farmacología II",
           "uv": 6,
-          "requisito": "Ninguno",
+          "requisito": "PG-201",
         },
         {
           "id": 37,
@@ -11801,15 +11796,15 @@ class CarrerasData {
           "codigo": "FP-212",
           "asignatura": "Fisiopatología II",
           "uv": 6,
-          "requisito": "Ninguno",
+          "requisito": "FP-211",
         },
         {
           "id": 38,
           "periodo": "OCTAVO PERÍODO",
           "codigo": "CL-200",
-          "asignatura": "Introducción a la \nClínica II",
+          "asignatura": "Introducción a la Clínica II",
           "uv": 8,
-          "requisito": "Ninguno",
+          "requisito": "FP-211,CL-100",  
         },
         {
           "id": 39,
@@ -11817,7 +11812,7 @@ class CarrerasData {
           "codigo": "PS-112",
           "asignatura": "Psicopatología",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "PG-211,CL-100",
         },
         {
           "id": 40,
@@ -11825,7 +11820,7 @@ class CarrerasData {
           "codigo": "CL-205",
           "asignatura": "Cirugía I",
           "uv": 7,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 41,
@@ -11833,7 +11828,7 @@ class CarrerasData {
           "codigo": "CL-206",
           "asignatura": "Medicina I",
           "uv": 7,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 42,
@@ -11841,7 +11836,7 @@ class CarrerasData {
           "codigo": "RD-301",
           "asignatura": "Radiología",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 43,
@@ -11849,7 +11844,7 @@ class CarrerasData {
           "codigo": "MQ-411",
           "asignatura": "Técnicas y Proc. Med",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 44,
@@ -11857,7 +11852,7 @@ class CarrerasData {
           "codigo": "CL-207",
           "asignatura": "Gineco Obstetricia I",
           "uv": 10,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 45,
@@ -11865,7 +11860,7 @@ class CarrerasData {
           "codigo": "CL-208",
           "asignatura": "Pediatría",
           "uv": 10,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 46,
@@ -11873,7 +11868,7 @@ class CarrerasData {
           "codigo": "EC-110",
           "asignatura": "Epidemiología",
           "uv": 4,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 47,
@@ -11881,7 +11876,7 @@ class CarrerasData {
           "codigo": "PS-113",
           "asignatura": "Psiquiatría",
           "uv": 6,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 48,
@@ -11889,7 +11884,7 @@ class CarrerasData {
           "codigo": "SP-213",
           "asignatura": "Salud Pública III",
           "uv": 11,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 49,
@@ -11897,7 +11892,7 @@ class CarrerasData {
           "codigo": "CL-209",
           "asignatura": "Clínico Cirugía II",
           "uv": 7,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 50,
@@ -11905,7 +11900,7 @@ class CarrerasData {
           "codigo": "UR-403",
           "asignatura": "Urología",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 51,
@@ -11913,7 +11908,7 @@ class CarrerasData {
           "codigo": "CL-210",
           "asignatura": "Clínica Médica II",
           "uv": 7,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 52,
@@ -11921,7 +11916,7 @@ class CarrerasData {
           "codigo": "CL-211",
           "asignatura": "Clínica Gineco Obstetricia II",
           "uv": 10,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 53,
@@ -11929,7 +11924,7 @@ class CarrerasData {
           "codigo": "CL-212",
           "asignatura": "Clínica Pediatría",
           "uv": 10,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 54,
@@ -11937,7 +11932,7 @@ class CarrerasData {
           "codigo": "OF-403",
           "asignatura": "Oftalmología",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 55,
@@ -11945,7 +11940,7 @@ class CarrerasData {
           "codigo": "ML-205",
           "asignatura": "Medicina Legal",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 56,
@@ -11953,7 +11948,7 @@ class CarrerasData {
           "codigo": "RD-402",
           "asignatura": "Radiología II",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 57,
@@ -11961,7 +11956,7 @@ class CarrerasData {
           "codigo": "PS-115",
           "asignatura": "Medicina Psicosomática",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 58,
@@ -11969,7 +11964,7 @@ class CarrerasData {
           "codigo": "PS-116",
           "asignatura": "Higiene Mental",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 59,
@@ -11977,7 +11972,7 @@ class CarrerasData {
           "codigo": "NE-403",
           "asignatura": "Neurología",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 60,
@@ -11985,7 +11980,7 @@ class CarrerasData {
           "codigo": "OT-403",
           "asignatura": "Ortopedia",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 61,
@@ -11993,7 +11988,7 @@ class CarrerasData {
           "codigo": "DE-403",
           "asignatura": "Dermatología",
           "uv": 3,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 62,
@@ -12001,7 +11996,7 @@ class CarrerasData {
           "codigo": "SP-214",
           "asignatura": "Salud Pública IV",
           "uv": 8,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 63,
@@ -12009,7 +12004,7 @@ class CarrerasData {
           "codigo": "OR-403",
           "asignatura": "Otorrinolaringología",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 64,
@@ -12017,7 +12012,7 @@ class CarrerasData {
           "codigo": "TC-501",
           "asignatura": "Terapéutica Clínica",
           "uv": 2,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 65,
@@ -12025,7 +12020,7 @@ class CarrerasData {
           "codigo": "CL-213",
           "asignatura": "Internado en Cirugía",
           "uv": 16,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 66,
@@ -12033,7 +12028,7 @@ class CarrerasData {
           "codigo": "CL-214",
           "asignatura": "Internado en Gineco-Obstetricia",
           "uv": 16,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 67,
@@ -12041,7 +12036,7 @@ class CarrerasData {
           "codigo": "CL-215",
           "asignatura": "Internado en Medicina",
           "uv": 16,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
         {
           "id": 68,
@@ -12049,7 +12044,7 @@ class CarrerasData {
           "codigo": "CL-216",
           "asignatura": "Internado en Pediatría",
           "uv": 16,
-          "requisito": "Ninguno",
+          "requisito": "PS-112",
         },
       ],
     },
@@ -12222,7 +12217,7 @@ class CarrerasData {
           "codigo": "OSE-082",
           "asignatura": "Odontología Sanitaria I",
           "uv": 3,
-          "requisito": "IOE-041, MM-241",
+          "requisito": "IOE-041,MM-241",
         },
         {
           "id": 22,
@@ -12278,7 +12273,7 @@ class CarrerasData {
           "codigo": "OSE-173",
           "asignatura": "Odontología Sanitaria II",
           "uv": 3,
-          "requisito": "AM-221, OSE-082",
+          "requisito": "AM-221,OSE-082",
         },
         {
           "id": 29,
@@ -12286,7 +12281,7 @@ class CarrerasData {
           "codigo": "OCE-265",
           "asignatura": "Oclusión",
           "uv": 3,
-          "requisito": "FM-111, AME-184",
+          "requisito": "FM-111,AME-184",
         },
         {
           "id": 30,
@@ -12294,7 +12289,7 @@ class CarrerasData {
           "codigo": "RDE-275",
           "asignatura": "Radiología",
           "uv": 5,
-          "requisito": "FS-104, ACE-194",
+          "requisito": "FS-104,ACE-194",
         },
         {
           "id": 31,
@@ -12310,7 +12305,7 @@ class CarrerasData {
           "codigo": "POE-295",
           "asignatura": "Psicología Aplicada",
           "uv": 4,
-          "requisito": "NA-111, FM-111",
+          "requisito": "NA-111,FM-111",
         },
         {
           "id": 33,
@@ -12334,7 +12329,7 @@ class CarrerasData {
           "codigo": "OPE-326",
           "asignatura": "Operatoria Dental I",
           "uv": 3,
-          "requisito": "HEE-234, OCE-265",
+          "requisito": "HEE-234,OCE-265",
         },
         {
           "id": 36,
@@ -12342,7 +12337,7 @@ class CarrerasData {
           "codigo": "ESE-336",
           "asignatura": "Estomatología I",
           "uv": 3,
-          "requisito": "PGE-285, RDE-275",
+          "requisito": "PGE-285,RDE-275",
         },
         {
           "id": 37,
@@ -12350,7 +12345,7 @@ class CarrerasData {
           "codigo": "SEE-346",
           "asignatura": "Semiología",
           "uv": 4,
-          "requisito": "PGE-285, FC-511",
+          "requisito": "PGE-285,FC-511",
         },
         {
           "id": 38,
@@ -12358,7 +12353,7 @@ class CarrerasData {
           "codigo": "CBE-356",
           "asignatura": "Cirugía Bucal I",
           "uv": 6,
-          "requisito": "PGE-285, FC-511",
+          "requisito": "PGE-285,FC-511",
         },
         {
           "id": 39,
@@ -12382,7 +12377,7 @@ class CarrerasData {
           "codigo": "PRE-387",
           "asignatura": "Protesis Removible I",
           "uv": 3,
-          "requisito": "PE-326, CBE-356",
+          "requisito": "PE-326,CBE-356",
         },
         {
           "id": 42,
@@ -12390,7 +12385,7 @@ class CarrerasData {
           "codigo": "OPE-397",
           "asignatura": "Operatoria Dental ll",
           "uv": 6,
-          "requisito": "OPE-326, CBE356",
+          "requisito": "OPE-326,CBE-356",
         },
         {
           "id": 43,
@@ -12398,7 +12393,7 @@ class CarrerasData {
           "codigo": "ESE-407",
           "asignatura": "Estomatología II",
           "uv": 5,
-          "requisito": "ESE-336; SEE-340",
+          "requisito": "ESE-336;SEE-340",
         },
         {
           "id": 44,
@@ -12406,7 +12401,7 @@ class CarrerasData {
           "codigo": "CBE-417",
           "asignatura": "Cirugía Bucal II",
           "uv": 6,
-          "requisito": "CBE-356, TAE-366",
+          "requisito": "CBE-356,TAE-366",
         },
         {
           "id": 45,
@@ -12414,7 +12409,7 @@ class CarrerasData {
           "codigo": "PIE-427",
           "asignatura": "periodoncia I",
           "uv": 5,
-          "requisito": "TAE-366, CBE-356",
+          "requisito": "TAE-366,CBE-356",
         },
         {
           "id": 46,
@@ -12422,7 +12417,7 @@ class CarrerasData {
           "codigo": "EDE-437",
           "asignatura": "Endodoncia I",
           "uv": 3,
-          "requisito": "OPE-326, TAE-366",
+          "requisito": "OPE-326,TAE-366",
         },
         {
           "id": 47,
@@ -12467,7 +12462,7 @@ class CarrerasData {
         {
           "id": 52,
           "periodo": 9,
-          "codigo": "EDE-508",
+          "codigo": "EDE-508", 
           "asignatura": "Endodoncia II",
           "uv": 6,
           "requisito": "EDE-437,CBE-417",
@@ -12494,7 +12489,7 @@ class CarrerasData {
           "codigo": "PFE-549",
           "asignatura": "Prótesis Fija II",
           "uv": 3,
-          "requisito": "PFE-488, EDE-508",
+          "requisito": "PFE-488,EDE-508",
         },
         {
           "id": 56,
@@ -12502,7 +12497,7 @@ class CarrerasData {
           "codigo": "PTE-559",
           "asignatura": "Prótesis Total I",
           "uv": 3,
-          "requisito": "PFE-488, PIE-498",
+          "requisito": "PFE-488,PIE-498",
         },
         {
           "id": 57,
@@ -12510,15 +12505,15 @@ class CarrerasData {
           "codigo": "CIE-579",
           "asignatura": "Clínica Integral I",
           "uv": 9,
-          "requisito": "Asignaturas IX periodo, MIE-315",
+          "requisito": "EDE-508,PIE-498",
         },
         {
           "id": 58,
           "periodo": 10,
-          "codigo": "CEE-589",
+          "codigo": "CEE-589",  
           "asignatura": "Clínicas Estomatológicas",
           "uv": 10,
-          "requisito": "Asignaturas IX periodo",
+          "requisito": "EDE-508,PIE-498",
         },
         {
           "id": 59,
@@ -12526,7 +12521,7 @@ class CarrerasData {
           "codigo": "ORE-591",
           "asignatura": "Ortodoncia II",
           "uv": 5,
-          "requisito": "PAE-529.ORE-539",
+          "requisito": "PAE-529,ORE-539",
         },
         {
           "id": 60,
@@ -12550,7 +12545,7 @@ class CarrerasData {
           "codigo": "GOE-621",
           "asignatura": "Gestión de la Calidad Total en Odontología",
           "uv": 3,
-          "requisito": "Asignaturas X periodo",
+          "requisito": "CEE-589,CIE-579",
         },
         {
           "id": 63,
@@ -12566,11 +12561,12 @@ class CarrerasData {
           "codigo": "CIE-641",
           "asignatura": "Clínica Integral II",
           "uv": 9,
-          "requisito": "Asignaturas X periodo",
+          "requisito": "CEE-589,CIE-579",
         },
       ],
     },
   ];
+  
   static List<String> getNombresCarreras() {
     try {
       return carreras
