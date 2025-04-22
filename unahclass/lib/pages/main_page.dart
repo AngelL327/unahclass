@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
+import 'package:unahclass/Screens/mi_pensum.dart';
+import 'package:unahclass/Screens/seleccionar_carrera.dart';
 import 'package:unahclass/pages/Usuario_page.dart';
 import 'package:unahclass/pages/calendar_page.dart';
+import 'package:unahclass/pages/clases_aprobadas_page.dart';
 import 'package:unahclass/pages/clases_pendientes_page.dart';
 import 'package:unahclass/pages/clases_sugeridas_page.dart';
 import 'package:unahclass/pages/optativas_page.dart';
 import 'package:unahclass/pages/settings_page.dart';
+import 'package:unahclass/pages/auth_page.dart';
 import 'package:unahclass/pages/mis_cursos_pages.dart';
+import 'package:unahclass/Screens/carreras_screen.dart';
 import 'package:unahclass/pages/materias_page.dart';
 import 'package:unahclass/pages/calculo_indice.dart';
-import 'package:unahclass/Screens/mi_pensum.dart';
-import 'package:unahclass/Screens/seleccionar_carrera.dart';
-import 'package:unahclass/pages/clases_aprobadas_page.dart';
-import 'package:unahclass/Screens/carreras_screen.dart';
+import 'package:unahclass/pages/Usuario_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -33,15 +36,15 @@ class _MainPageState extends State<MainPage> {
         style: TextStyle(fontSize: 20),
       ),
     ),
+    FacultadesPage(), // Aquí se agrega la pantalla de selección de carreras
 
-    FacultadesPage(), // Aqui se agrega la pantalla de seleccion de carreras
     MisCursosPage(),
     CalendarPage(),
     const SettingsPage(),
     PerfilPage(),
-    const LogoutPage(), // Pantalla de cierre de sesion
+    // Pantalla de cierre de sesión
     SeleccionCarreraScreen(),
-    OptativasScreen(), // Pantalla de seleccion de carrera
+    OptativasScreen(), // Pantalla de selección de carrera
   ];
 
   final List<String> _titles = [
@@ -49,9 +52,8 @@ class _MainPageState extends State<MainPage> {
     "Carreras",
     "Mis cursos",
     "Calendar",
-    "Settings",
+    "Configuración",
     "Usuario",
-    "Cerrar sesión",
   ];
 
   void _onItemTapped(int index) {
@@ -63,6 +65,15 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser;
+
+    if (user == null) {
+      return const Center(child: Text("No hay usuario autenticado"));
+    }
+
+    final String email = user.email ?? 'Correo no disponible';
+    final String? displayName = user.displayName;
+    final String uid = user.uid;
     return SafeArea(
       child: AdvancedDrawer(
         //    backdropColor: const Color.fromARGB(255, 27, 160, 201),
@@ -101,21 +112,38 @@ class _MainPageState extends State<MainPage> {
                   fit: BoxFit.cover,
                 ),
               ),
-              Container(
-                color: const Color(0xFF1D9FCB).withOpacity(
-                  0.66,
-                ), // Opcional: oscurecer para mayor legibilidad
-              ),
+              Container(color: const Color(0xFF1D9FCB).withOpacity(0.66)),
               ListView(
-                // ListView para hacer scroll
                 padding: EdgeInsets.zero,
                 children: [
-                  const SizedBox(height: 20),
-                  const CircleAvatar(
+                  const SizedBox(height: 10),
+                  CircleAvatar(
                     radius: 50,
-                    backgroundImage: AssetImage(
-                      'assets/images/flutter_logo.png',
+                    backgroundColor: Colors.white,
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/decoration/unahclass.jpeg',
+                        fit: BoxFit.cover,
+                        width: 100, // 2 * radius
+                        height: 100,
+                      ),
                     ),
+                  ),
+
+                  const SizedBox(height: 5),
+
+                  Text(
+                    displayName ?? 'Estudiante',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+
+                  const SizedBox(height: 5),
+
+                  Text(
+                    email,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(color: Colors.white70, fontSize: 16),
                   ),
                   const SizedBox(height: 20),
                   const Divider(color: Colors.white, thickness: 1),
@@ -146,13 +174,13 @@ class _MainPageState extends State<MainPage> {
                   _buildDrawerItem(Icons.calendar_today, "Calendar", 3),
                   _buildDrawerItem(Icons.settings, "Settings", 4),
                   _buildDrawerItem(Icons.lock, "Usuario", 5),
-                  _buildDrawerItem(Icons.exit_to_app, "Cerrar sesion ", 6),
+
                   const SizedBox(height: 20),
                   const Divider(color: Colors.white, thickness: 1),
                   const SizedBox(height: 10),
                   const Center(
                     child: Text(
-                      "© 2025 Proyecto de Prueba",
+                      "© 2025 UNAHClass",
                       style: TextStyle(color: Colors.white70, fontSize: 12),
                     ),
                   ),

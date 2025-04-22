@@ -89,7 +89,7 @@ flutter:
      - assets/facultades/Medicas.png
      - assets/decoration/facu.jpg 
      - assets/decoration/di1.jpg
-
+     - assets/decoration/unahclass.jpeg
      
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

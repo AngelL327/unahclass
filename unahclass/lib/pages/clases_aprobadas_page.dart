@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:percent_indicator/percent_indicator.dart'; // Importar el paquete
 import '../data/carreras_data.dart';
-import 'package:proyecto_prueba/widgets/helper.dart';
+import 'package:unahclass/widgets/helper.dart';
 class ClasesAprobadasScreen extends StatefulWidget {
   const ClasesAprobadasScreen({super.key});
 

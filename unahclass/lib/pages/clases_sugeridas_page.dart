@@ -59,7 +59,7 @@ class _ClasesSugeridasPageState extends State<ClasesSugeridasPage> {
 
       final requisitos =
           requisitoRaw
-              .replaceAll(RegExp(r'[,/]'), ' ')
+              .replaceAll(RegExp(r'[,/;]'), ' ')
               .split(' ')
               .where((r) => r.isNotEmpty)
               .toList();
