@@ -9,7 +9,6 @@ import 'package:unahclass/pages/settings_page.dart';
 import 'package:unahclass/pages/mis_cursos_pages.dart';
 import 'package:unahclass/pages/materias_page.dart';
 import 'package:unahclass/pages/calculo_indice.dart';
-import 'package:unahclass/pages/logout.dart';
 import 'package:unahclass/Screens/mi_pensum.dart';
 import 'package:unahclass/Screens/seleccionar_carrera.dart';
 import 'package:unahclass/pages/clases_aprobadas_page.dart';
