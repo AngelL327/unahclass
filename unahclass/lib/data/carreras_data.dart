@@ -12611,12 +12611,12 @@ class CarrerasData {
         final periodo = materia['periodo']?.toString().trim() ?? '';
         if (periodo.isEmpty) continue;
 
-        // Normalizar el periodo para comparación (sin case sensitive)
+       
         final periodoNormalizado = periodo.toLowerCase();
 
         if (!periodosVistos.contains(periodoNormalizado)) {
           periodosVistos.add(periodoNormalizado);
-          periodosUnicos.add(periodo); // Guardamos el original
+          periodosUnicos.add(periodo); 
         }
       }
 
@@ -12662,8 +12662,8 @@ class CarrerasData {
           "Ingeniería Eléctrica Industrial",
           "Ingeniería Civil",
           "TÉCNICO UNIVERSITARIO EN MÁQUINAS HERRAMIENTAS CNC",
-          "Licenciatura en Quimica Industrial",
-          "Tecnico Universatorio En Seguridad e Higiene Industrial",
+          "Licenciatura en Química Industrial",
+          "Técnico Universitario En Seguridad e Higiene Industrial",
         ];
       case "FACULTAD DE CIENCIAS ECONOMICAS":
         return [
@@ -12692,7 +12692,7 @@ class CarrerasData {
       case "FACULTAD DE CIENCIAS JURIDICAS":
         return ["Derecho"];
       case "FACULTAD DE QUIMICA Y FARMACIA":
-        return ["Licenciatura en Quimica Industrial"];
+        return ["Licenciatura en Química Industrial"];
       case "FACULTAD DE CIENCIAS MEDICAS":
         return ["Enfermeria", "Medicina y Cirugía", "Odontología"];
       default:
@@ -12721,7 +12721,7 @@ class CarrerasData {
     }
   }
 
-  // Método para obtener las orientaciones de una carrera (si existen)
+  
   static List<Map<String, dynamic>> getOrientacionesPorCarrera(
     String carreraNombre,
   ) {
@@ -12799,7 +12799,7 @@ class CarrerasData {
   ) {
     final result = <String, List<Map<String, dynamic>>>{};
 
-    // Agregar optativas generales
+    
     final optativas = getOptativasPorCarrera(carreraNombre);
     if (optativas.isNotEmpty) {
       result['Optativas Generales'] = optativas;

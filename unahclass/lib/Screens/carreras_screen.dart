@@ -50,12 +50,16 @@ class CarrerasScreen extends StatelessWidget {
 
   Widget _buildCarreraCard(BuildContext context, String carrera, int index) {
     final colors = [
-      [const Color(0xFF05D1AC), const Color(0xFF05D1AC)], // Verde agua
-      [const Color(0xFFE94409), const Color(0xFFE94409)], // Rojo/naranja fuerte
-      [const Color(0xFFE20F83), const Color(0xFFE20F83)], // Fucsia fuerte
-      [const Color(0xFF0D5BDA), const Color(0xFF0D5BDA)], // Azul profundo
-      [const Color(0xFF13E05E), const Color(0xFF13E05E)], // Verde brillante
+      [const Color(0xFF81D4FA), const Color(0xFF81D4FA)], // Azul cielo medio
+      [const Color(0xFF9CCC65), const Color(0xFF9CCC65)], // Verde lima suave
+      [
+        const Color(0xFFFFEB3B),
+        const Color(0xFFFFEB3B),
+      ], // Amarillo fuerte pero legible
+      [const Color(0xFFFFA726), const Color(0xFFFFA726)], // Naranja claro
+      [const Color(0xFFBA68C8), const Color(0xFFBA68C8)], // Lila vivo
     ];
+
     final gradientColors = colors[index % colors.length];
 
     return GestureDetector(
@@ -68,6 +72,10 @@ class CarrerasScreen extends StatelessWidget {
             end: Alignment.bottomRight,
           ),
           borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: Colors.white, // o un color acorde al tema
+            width: 2,
+          ),
           boxShadow: const [
             BoxShadow(
               color: Colors.black12,
@@ -352,5 +360,4 @@ class ElementosEspecialesScreen extends StatelessWidget {
       ),
     );
   }
-    
 }
