@@ -163,7 +163,7 @@ class _LoginPageState extends State<AuthPage> {
                         );
                       },
                       child: const Text(
-                        'Si aun no tienes una cuenta. Registrate',
+                        'Si aún no tienes una cuenta. Registrate',
                         style: TextStyle(
                           fontSize: 14,
                           color: Color(0XFF1D9FCB),

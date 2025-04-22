@@ -14,8 +14,10 @@ import 'package:unahclass/pages/mis_cursos_pages.dart';
 import 'package:unahclass/Screens/carreras_screen.dart';
 import 'package:unahclass/pages/materias_page.dart';
 import 'package:unahclass/pages/calculo_indice.dart';
-import 'package:unahclass/pages/Usuario_page.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:unahclass/Screens/mi_pensum.dart';
+import 'package:unahclass/Screens/seleccionar_carrera.dart';
+import 'package:unahclass/pages/clases_aprobadas_page.dart';
+import 'package:unahclass/Screens/carreras_screen.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
