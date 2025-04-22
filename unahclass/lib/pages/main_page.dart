@@ -41,13 +41,14 @@ class _MainPageState extends State<MainPage> {
     ),
     FacultadesPage(), // Aquí se agrega la pantalla de selección de carreras
 
+    FacultadesPage(), // Aqui se agrega la pantalla de seleccion de carreras
     MisCursosPage(),
     CalendarPage(),
     const SettingsPage(),
     PerfilPage(),
-    // Pantalla de cierre de sesión
+    const LogoutPage(), // Pantalla de cierre de sesion
     SeleccionCarreraScreen(),
-    OptativasScreen(), // Pantalla de selección de carrera
+    OptativasScreen(), // Pantalla de seleccion de carrera
   ];
 
   final List<String> _titles = [
