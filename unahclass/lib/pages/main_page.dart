@@ -13,6 +13,7 @@ import 'package:unahclass/Screens/mi_pensum.dart';
 import 'package:unahclass/Screens/seleccionar_carrera.dart';
 import 'package:unahclass/pages/clases_aprobadas_page.dart';
 import 'package:unahclass/Screens/carreras_screen.dart';
+import 'package:unahclass/pages/logout.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
