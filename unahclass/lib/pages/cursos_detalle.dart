@@ -81,11 +81,7 @@ class _DetalleCursoPageState extends State<DetalleCursoPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.picture_as_pdf,
-                size: 48,
-                color: Color.fromARGB(255, 16, 81, 137),
-              ),
+              Icon(Icons.picture_as_pdf, size: 48, color: Colors.red),
               SizedBox(height: 8),
               Text('PDF', style: TextStyle(fontWeight: FontWeight.bold)),
             ],
@@ -117,68 +113,75 @@ class _DetalleCursoPageState extends State<DetalleCursoPage> {
         ),
         elevation: 0,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(16),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Título',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text('Cualquier apunte que realices acerca de la clase'),
+                  ],
+                ),
               ),
-              child: const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Título',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                  ),
-                  SizedBox(height: 8),
-                  Text('Cualquier apunte que realices acerca de la clase'),
-                ],
+              const SizedBox(height: 16),
+
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.7,
+                child: StreamBuilder<QuerySnapshot>(
+                  stream: documentosRef.snapshots(),
+                  builder: (context, snapshot) {
+                    if (!snapshot.hasData) {
+                      return const Center(child: CircularProgressIndicator());
+                    }
+
+                    final docs = snapshot.data!.docs;
+
+                    return GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 12,
+                            mainAxisSpacing: 12,
+                            childAspectRatio: 1,
+                          ),
+                      itemCount: docs.length,
+                      itemBuilder: (context, index) {
+                        final doc = docs[index];
+                        final data = doc.data() as Map<String, dynamic>;
+                        final url = data['url'];
+                        final tipo = data['tipo'];
+
+                        return GestureDetector(
+                          onTap: () => _mostrarDocumento(context, url, tipo),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: _buildDocumentoWidget(url, tipo),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            Expanded(
-              child: StreamBuilder<QuerySnapshot>(
-                stream: documentosRef.snapshots(),
-                builder: (context, snapshot) {
-                  if (!snapshot.hasData) {
-                    return const Center(child: CircularProgressIndicator());
-                  }
-
-                  final docs = snapshot.data!.docs;
-
-                  return GridView.builder(
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 12,
-                          mainAxisSpacing: 12,
-                          childAspectRatio: 1,
-                        ),
-                    itemCount: docs.length,
-                    itemBuilder: (context, index) {
-                      final doc = docs[index];
-                      final data = doc.data() as Map<String, dynamic>;
-                      final url = data['url'];
-                      final tipo = data['tipo'];
-
-                      return GestureDetector(
-                        onTap: () => _mostrarDocumento(context, url, tipo),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: _buildDocumentoWidget(url, tipo),
-                        ),
-                      );
-                    },
-                  );
-                },
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
