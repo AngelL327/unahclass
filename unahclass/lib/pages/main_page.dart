@@ -40,15 +40,12 @@ class _MainPageState extends State<MainPage> {
       ),
     ),
     FacultadesPage(), // Aquí se agrega la pantalla de selección de carreras
-
-    FacultadesPage(), // Aqui se agrega la pantalla de seleccion de carreras
     MisCursosPage(),
     CalendarPage(),
     const SettingsPage(),
     PerfilPage(),
-    const LogoutPage(), // Pantalla de cierre de sesion
     SeleccionCarreraScreen(),
-    OptativasScreen(), // Pantalla de seleccion de carrera
+    OptativasScreen(), 
   ];
 
   final List<String> _titles = [
@@ -128,7 +125,7 @@ class _MainPageState extends State<MainPage> {
                       child: Image.asset(
                         'assets/decoration/unahclass.jpeg',
                         fit: BoxFit.cover,
-                        width: 100, // 2 * radius
+                        width: 100, 
                         height: 100,
                       ),
                     ),

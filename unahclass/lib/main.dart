@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'firebase_options.dart';
-
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:unahclass/pages/main_page.dart';
 import 'package:unahclass/pages/auth_page.dart';
-
+import 'package:intl/intl.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
@@ -48,4 +48,10 @@ class AuthWrapper extends StatelessWidget {
       },
     );
   }
+  void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initializeDateFormatting('es_ES', null);
+  runApp(MyApp());
+}
+
 }

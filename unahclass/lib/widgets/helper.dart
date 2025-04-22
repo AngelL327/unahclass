@@ -1,5 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'dart:convert';
+
 
 class UserPrefs {
   static Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
@@ -112,4 +114,5 @@ class UserPrefs {
       }
     }
   }
+
 }

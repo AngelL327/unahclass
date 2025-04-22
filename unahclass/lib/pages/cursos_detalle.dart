@@ -4,6 +4,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:io';
 import 'package:open_file/open_file.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:unahclass/widgets/helper.dart';
 
 class DetalleCursoPage extends StatefulWidget {
   final Map<String, dynamic> curso;
@@ -15,6 +17,30 @@ class DetalleCursoPage extends StatefulWidget {
 }
 
 class _DetalleCursoPageState extends State<DetalleCursoPage> {
+  TextEditingController _tituloController = TextEditingController();
+  TextEditingController _apunteController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _cargarDatos();
+  }
+
+  Future<void> _cargarDatos() async {
+    _tituloController.text = await UserPrefs.getString('titulo') ?? 'Título'; 
+      _apunteController.text = await UserPrefs.getString('apunte') ?? 'Cualquier apunte que realices acerca de la clase'; 
+    setState(() {
+      _tituloController.text;
+      _apunteController.text;
+    });
+  } 
+
+    Future<void> _guardarDatos() async {
+    
+    await UserPrefs.setString('titulo', _tituloController.text);
+    await UserPrefs.setString('apunte', _apunteController.text);
+  }
+  
   Future<void> _subirArchivo() async {
     final resultado = await FilePicker.platform.pickFiles(
       type: FileType.custom,
@@ -125,18 +151,20 @@ class _DetalleCursoPageState extends State<DetalleCursoPage> {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: const Column(
+                child:  Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Título',
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
+                    TextField(
+                      controller: _apunteController,
+                      maxLines: 5,
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Cualquier apunte que realices acerca de la clase',
                       ),
+                      onChanged: (text) {
+                        _guardarDatos(); 
+                      },
                     ),
-                    SizedBox(height: 8),
-                    Text('Cualquier apunte que realices acerca de la clase'),
                   ],
                 ),
               ),

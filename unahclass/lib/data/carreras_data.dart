@@ -12596,14 +12596,14 @@ class CarrerasData {
       final carrera = getCarreraPorNombre(carreraNombre);
       if (carrera == null || carrera['materias'] == null) return [];
 
-      // Obtener todas las materias y ordenarlas por id primero
+      
       final materias =
           (carrera['materias'] as List)
               .whereType<Map<String, dynamic>>()
               .toList()
             ..sort((a, b) => (a['id'] as int).compareTo(b['id'] as int));
 
-      // Procesar periodos manteniendo el orden de aparición por id
+      
       final periodosUnicos = <String>[];
       final periodosVistos = <String>{};
 
