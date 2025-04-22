@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
-import 'package:proyecto_prueba/Screens/estadisticas_screen.dart';
-import 'package:proyecto_prueba/widgets/helper.dart';
+import 'package:unahclass/Screens/estadisticas_screen.dart';
+import 'package:unahclass/widgets/helper.dart';
 
 class CalculoIndiceScreen extends StatefulWidget {
   const CalculoIndiceScreen({super.key});
