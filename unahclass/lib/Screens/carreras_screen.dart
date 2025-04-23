@@ -51,13 +51,13 @@ class CarrerasScreen extends StatelessWidget {
   Widget _buildCarreraCard(BuildContext context, String carrera, int index) {
     final colors = [
       [const Color(0xFF81D4FA), const Color(0xFF81D4FA)], // Azul cielo medio
-      [const Color(0xFF9CCC65), const Color(0xFF9CCC65)], // Verde lima suave
+      [const Color(0xFF9CCC65), const Color(0xFF9CCC65)], 
       [
         const Color(0xFFFFEB3B),
         const Color(0xFFFFEB3B),
-      ], // Amarillo fuerte pero legible
-      [const Color(0xFFFFA726), const Color(0xFFFFA726)], // Naranja claro
-      [const Color(0xFFBA68C8), const Color(0xFFBA68C8)], // Lila vivo
+      ], 
+      [const Color(0xFFFFA726), const Color(0xFFFFA726)], 
+      [const Color(0xFFBA68C8), const Color(0xFFBA68C8)],
     ];
 
     final gradientColors = colors[index % colors.length];

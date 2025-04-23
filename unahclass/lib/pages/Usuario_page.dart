@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'auth_page.dart';
+import 'package:unahclass/widgets/helper.dart';
 
 class PerfilPage extends StatefulWidget {
   const PerfilPage({super.key});
@@ -21,10 +22,9 @@ class _PerfilPageState extends State<PerfilPage> {
   }
 
   Future<void> loadUserInfo() async {
-    final prefs = await SharedPreferences.getInstance();
-    final nombre = prefs.getString('nombre') ?? '';
-    final apellido = prefs.getString('apellido') ?? '';
-    final email = prefs.getString('email') ?? '';
+    final nombre = await UserPrefs.getString('nombre') ?? '';
+    final apellido = await UserPrefs.getString('apellido') ?? '';
+    final email = await UserPrefs.getString('email') ?? '';
 
     setState(() {
       userName = '$nombre $apellido';
@@ -33,8 +33,6 @@ class _PerfilPageState extends State<PerfilPage> {
   }
 
   Future<void> logout() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.clear();
     await FirebaseAuth.instance.signOut();
     if (mounted) {
       Navigator.pushReplacement(

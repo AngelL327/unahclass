@@ -25,13 +25,13 @@ class _ClasesAprobadasScreenState extends State<ClasesAprobadasScreen>{
   Future<void> _cargarDatos() async {
   
 
-    // Cargar carrera seleccionada
+   
     String? carreraString = await UserPrefs.getString('carreraSeleccionada');
     if (carreraString != null) {
       carreraSeleccionada = json.decode(carreraString);
     }
 
-    // Cargar materias aprobadas
+ 
     final materiasAprobadas = await UserPrefs.getStringList('materiasSeleccionadas') ?? [];
 
     _cargarClasesAprobadas(materiasAprobadas);
