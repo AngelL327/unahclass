@@ -21,9 +21,6 @@ class _DetalleCarreraScreenState extends State<DetalleCarreraScreen> {
   }
 
   Future<void> _cargarDatos() async {
-    
-
-    // Cargar carrera
     String? carreraString = await UserPrefs.getString('carreraSeleccionada');
     if (carreraString != null) {
       Map<String, dynamic> carreraMap = json.decode(carreraString);
@@ -32,15 +29,18 @@ class _DetalleCarreraScreenState extends State<DetalleCarreraScreen> {
       });
     }
 
-    // Cargar materias seleccionadas
-    List<String>? seleccionadas = await UserPrefs.getStringList('materiasSeleccionadas');
+    List<String>? seleccionadas = await UserPrefs.getStringList(
+      'materiasSeleccionadas',
+    );
     setState(() {
       materiasSeleccionadas = seleccionadas?.toSet() ?? {};
     });
   }
 
   Future<void> _actualizarMateriasSeleccionadas() async {
-    List<String>? seleccionadas = await UserPrefs.getStringList('materiasSeleccionadas');
+    List<String>? seleccionadas = await UserPrefs.getStringList(
+      'materiasSeleccionadas',
+    );
     setState(() {
       materiasSeleccionadas = seleccionadas?.toSet() ?? {};
     });
@@ -50,7 +50,16 @@ class _DetalleCarreraScreenState extends State<DetalleCarreraScreen> {
   Widget build(BuildContext context) {
     if (carreraSeleccionada == null) {
       return Scaffold(
-        body: Center(child: CircularProgressIndicator()),
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              CircularProgressIndicator(),
+              SizedBox(height: 16),
+              Text('Seleccione una carrera', style: TextStyle(fontSize: 16)),
+            ],
+          ),
+        ),
       );
     }
 
@@ -91,7 +100,10 @@ class _DetalleCarreraScreenState extends State<DetalleCarreraScreen> {
       final materias = entry.value;
 
       int total = materias.length;
-      int completadas = materias.where((m) => materiasSeleccionadas.contains(m['codigo'])).length;
+      int completadas =
+          materias
+              .where((m) => materiasSeleccionadas.contains(m['codigo']))
+              .length;
       double porcentaje = total == 0 ? 0 : completadas / total;
 
       return GestureDetector(
@@ -99,17 +111,20 @@ class _DetalleCarreraScreenState extends State<DetalleCarreraScreen> {
           await Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => MateriasPorPeriodoScreen(
-                materias: materias,
-                nombrePeriodo: "PERIODO $periodo",
-              ),
+              builder:
+                  (context) => MateriasPorPeriodoScreen(
+                    materias: materias,
+                    nombrePeriodo: "PERIODO $periodo",
+                  ),
             ),
           );
-          await _actualizarMateriasSeleccionadas(); // <-- Recarga al volver
+          await _actualizarMateriasSeleccionadas();
         },
         child: Card(
           elevation: 4,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
           color: Color(0xFF1d9fcb),
           child: Stack(
             children: [
@@ -117,10 +132,13 @@ class _DetalleCarreraScreenState extends State<DetalleCarreraScreen> {
                 top: 8,
                 left: 8,
                 child: CircularPercentIndicator(
-                  radius: 30.0,  // Tamaño reducido de la barra circular
-                  lineWidth: 6.0, // Ancho de la barra
+                  radius: 30.0,
+                  lineWidth: 6.0,
                   percent: porcentaje,
-                  center: Text('${(porcentaje * 100).toInt()}%', style: TextStyle(color: Colors.white)),
+                  center: Text(
+                    '${(porcentaje * 100).toInt()}%',
+                    style: TextStyle(color: Colors.white),
+                  ),
                   progressColor: Colors.white,
                   backgroundColor: Colors.white24,
                   circularStrokeCap: CircularStrokeCap.round,
@@ -132,17 +150,17 @@ class _DetalleCarreraScreenState extends State<DetalleCarreraScreen> {
                 child: Icon(Icons.arrow_forward_ios, color: Colors.white),
               ),
               Positioned(
-                bottom: 12,  // Posiciona más abajo
+                bottom: 12,
                 left: 0,
                 right: 0,
                 child: Text(
-                  "Periodo $periodo", // Texto más pequeño
+                  "Periodo $periodo",
                   style: TextStyle(
-                    fontSize: 10,  // Tamaño de letra más pequeño
+                    fontSize: 10,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                  textAlign: TextAlign.center, // Centrado
+                  textAlign: TextAlign.center,
                 ),
               ),
             ],
